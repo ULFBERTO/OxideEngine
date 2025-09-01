@@ -1,0 +1,10 @@
+^D:\AI\PYSICS\BUILD-MSVC-X64\CMAKEFILES\AA5D4E1020B819798D4D17B656F8C814\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/AI/Pysics -BD:/AI/Pysics/build-msvc-x64 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/AI/Pysics/build-msvc-x64/MarioEngine.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

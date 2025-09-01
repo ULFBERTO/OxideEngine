@@ -1,0 +1,10 @@
+^D:\AI\PYSICS\DEPS\GLFW-3.4\SRC\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/AI/Pysics -BD:/AI/Pysics/build-msvc-x64 --check-stamp-file D:/AI/Pysics/build-msvc-x64/_deps/glfw-build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
