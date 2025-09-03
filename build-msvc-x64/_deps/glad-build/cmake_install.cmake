@@ -1,4 +1,4 @@
-# Install script for directory: D:/AI/Pysics/deps/glad-0.1.36
+# Install script for directory: D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glad-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,6 +35,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "D:/AI/Pysics/build-msvc-x64/_deps/glad-build/install_local_manifest.txt"
+  file(WRITE "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glad-build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

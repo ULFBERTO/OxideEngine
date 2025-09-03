@@ -23,37 +23,37 @@ events:
       
       The output was:
       0
-      Versión de MSBuild 17.14.10+8b8e13593 para .NET Framework
-      Compilación iniciada a las 19/08/2025 5:29:11 p. m..
+      Versi├│n de MSBuild 17.14.10+8b8e13593 para .NET Framework
+      Compilaci├│n iniciada a las 2/09/2025 9:47:36 p.┬ám..
       
-      Proyecto "D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\4.0.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" en nodo 1 (destinos predeterminados).
+      Proyecto "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\4.0.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" en nodo 1 (destinos predeterminados).
       PrepareForBuild:
         Creando directorio "Debug\\".
-        La salida estructurada está habilitada. El formato del diagnóstico del compilador reflejará la jerarquía de errores. Consulte https://aka.ms/cpp/structured-output para obtener más detalles.
+        La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
         Creando directorio "Debug\\CompilerIdCXX.tlog\\".
       InitializeBuildStatus:
-        Se creará "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+        Se crear├í "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
         Aplicando tarea Touch a "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
       ClCompile:
         C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
         CMakeCXXCompilerId.cpp
       Link:
         C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
-        CompilerIdCXX.vcxproj -> D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\4.0.1\\CompilerIdCXX\\CompilerIdCXX.exe
+        CompilerIdCXX.vcxproj -> D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\4.0.1\\CompilerIdCXX\\CompilerIdCXX.exe
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
         :VCEnd
         CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe
       FinalizeBuildStatus:
-        Se eliminará el archivo "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Se eliminar├í el archivo "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
         Aplicando tarea Touch a "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
-      Compilación del proyecto terminada "D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\4.0.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (destinos predeterminados).
+      Compilaci├│n del proyecto terminada "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\4.0.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (destinos predeterminados).
       
-      Compilación correcta.
+      Compilaci├│n correcta.
           0 Advertencia(s)
           0 Errores
       
-      Tiempo transcurrido 00:00:00.95
+      Tiempo transcurrido 00:00:01.19
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -61,7 +61,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
       
       The CXX compiler identification is MSVC, found in:
-        D:/AI/Pysics/build-msvc-x64/CMakeFiles/4.0.1/CompilerIdCXX/CompilerIdCXX.exe
+        D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/4.0.1/CompilerIdCXX/CompilerIdCXX.exe
       
   -
     kind: "try_compile-v1"
@@ -72,8 +72,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/AI/Pysics/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-h540ev"
-      binary: "D:/AI/Pysics/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-h540ev"
+      source: "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-rnq5aj"
+      binary: "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-rnq5aj"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -83,40 +83,40 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/AI/Pysics/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-h540ev'
+        Change Dir: 'D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-rnq5aj'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ed45d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        Versión de MSBuild 17.14.10+8b8e13593 para .NET Framework
-        Compilación iniciada a las 19/08/2025 5:29:13 p. m..
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_64f42.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Versi├│n de MSBuild 17.14.10+8b8e13593 para .NET Framework
+        Compilaci├│n iniciada a las 2/09/2025 9:47:38 p.┬ám..
         
-        Proyecto "D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-h540ev\\cmTC_ed45d.vcxproj" en nodo 1 (destinos predeterminados).
+        Proyecto "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-rnq5aj\\cmTC_64f42.vcxproj" en nodo 1 (destinos predeterminados).
         PrepareForBuild:
-          Creando directorio "cmTC_ed45d.dir\\Debug\\".
-          La salida estructurada está habilitada. El formato del diagnóstico del compilador reflejará la jerarquía de errores. Consulte https://aka.ms/cpp/structured-output para obtener más detalles.
-          Creando directorio "D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-h540ev\\Debug\\".
-          Creando directorio "cmTC_ed45d.dir\\Debug\\cmTC_ed45d.tlog\\".
+          Creando directorio "cmTC_64f42.dir\\Debug\\".
+          La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
+          Creando directorio "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-rnq5aj\\Debug\\".
+          Creando directorio "cmTC_64f42.dir\\Debug\\cmTC_64f42.tlog\\".
         InitializeBuildStatus:
-          Se creará "cmTC_ed45d.dir\\Debug\\cmTC_ed45d.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
-          Aplicando tarea Touch a "cmTC_ed45d.dir\\Debug\\cmTC_ed45d.tlog\\unsuccessfulbuild".
+          Se crear├í "cmTC_64f42.dir\\Debug\\cmTC_64f42.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_64f42.dir\\Debug\\cmTC_64f42.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_ed45d.dir\\Debug\\\\" /Fd"cmTC_ed45d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp"
-          Compilador de optimización de C/C++ de Microsoft (R) versión 19.44.35208 para x64
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_64f42.dir\\Debug\\\\" /Fd"cmTC_64f42.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp"
+          Compilador de optimizaci├│n de C/C++ de Microsoft (R) versi├│n 19.44.35208 para x64
           (C) Microsoft Corporation. Todos los derechos reservados.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_ed45d.dir\\Debug\\\\" /Fd"cmTC_ed45d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_64f42.dir\\Debug\\\\" /Fd"cmTC_64f42.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-h540ev\\Debug\\cmTC_ed45d.exe" /INCREMENTAL /ILK:"cmTC_ed45d.dir\\Debug\\cmTC_ed45d.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/AI/Pysics/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-h540ev/Debug/cmTC_ed45d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/AI/Pysics/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-h540ev/Debug/cmTC_ed45d.lib" /MACHINE:X64  /machine:x64 cmTC_ed45d.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_ed45d.vcxproj -> D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-h540ev\\Debug\\cmTC_ed45d.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-rnq5aj\\Debug\\cmTC_64f42.exe" /INCREMENTAL /ILK:"cmTC_64f42.dir\\Debug\\cmTC_64f42.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-rnq5aj/Debug/cmTC_64f42.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-rnq5aj/Debug/cmTC_64f42.lib" /MACHINE:X64  /machine:x64 cmTC_64f42.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_64f42.vcxproj -> D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-rnq5aj\\Debug\\cmTC_64f42.exe
         FinalizeBuildStatus:
-          Se eliminará el archivo "cmTC_ed45d.dir\\Debug\\cmTC_ed45d.tlog\\unsuccessfulbuild".
-          Aplicando tarea Touch a "cmTC_ed45d.dir\\Debug\\cmTC_ed45d.tlog\\cmTC_ed45d.lastbuildstate".
-        Compilación del proyecto terminada "D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-h540ev\\cmTC_ed45d.vcxproj" (destinos predeterminados).
+          Se eliminar├í el archivo "cmTC_64f42.dir\\Debug\\cmTC_64f42.tlog\\unsuccessfulbuild".
+          Aplicando tarea Touch a "cmTC_64f42.dir\\Debug\\cmTC_64f42.tlog\\cmTC_64f42.lastbuildstate".
+        Compilaci├│n del proyecto terminada "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-rnq5aj\\cmTC_64f42.vcxproj" (destinos predeterminados).
         
-        Compilación correcta.
+        Compilaci├│n correcta.
             0 Advertencia(s)
             0 Errores
         
-        Tiempo transcurrido 00:00:00.95
+        Tiempo transcurrido 00:00:00.87
         
       exitCode: 0
   -
@@ -153,7 +153,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "deps/glfw-3.4/CMakeLists.txt:3 (project)"
+      - "build-msvc-x64/_deps/glfw-src/CMakeLists.txt:3 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
       Compiler:  
@@ -162,37 +162,37 @@ events:
       
       The output was:
       0
-      Versión de MSBuild 17.14.10+8b8e13593 para .NET Framework
-      Compilación iniciada a las 19/08/2025 5:29:14 p. m..
+      Versi├│n de MSBuild 17.14.10+8b8e13593 para .NET Framework
+      Compilaci├│n iniciada a las 2/09/2025 9:47:42 p.┬ám..
       
-      Proyecto "D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\4.0.1\\CompilerIdC\\CompilerIdC.vcxproj" en nodo 1 (destinos predeterminados).
+      Proyecto "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\4.0.1\\CompilerIdC\\CompilerIdC.vcxproj" en nodo 1 (destinos predeterminados).
       PrepareForBuild:
         Creando directorio "Debug\\".
-        La salida estructurada está habilitada. El formato del diagnóstico del compilador reflejará la jerarquía de errores. Consulte https://aka.ms/cpp/structured-output para obtener más detalles.
+        La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
         Creando directorio "Debug\\CompilerIdC.tlog\\".
       InitializeBuildStatus:
-        Se creará "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+        Se crear├í "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
         Aplicando tarea Touch a "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
       ClCompile:
         C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
         CMakeCCompilerId.c
       Link:
         C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
-        CompilerIdC.vcxproj -> D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\4.0.1\\CompilerIdC\\CompilerIdC.exe
+        CompilerIdC.vcxproj -> D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\4.0.1\\CompilerIdC\\CompilerIdC.exe
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
         :VCEnd
         CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe
       FinalizeBuildStatus:
-        Se eliminará el archivo "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Se eliminar├í el archivo "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
         Aplicando tarea Touch a "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
-      Compilación del proyecto terminada "D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\4.0.1\\CompilerIdC\\CompilerIdC.vcxproj" (destinos predeterminados).
+      Compilaci├│n del proyecto terminada "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\4.0.1\\CompilerIdC\\CompilerIdC.vcxproj" (destinos predeterminados).
       
-      Compilación correcta.
+      Compilaci├│n correcta.
           0 Advertencia(s)
           0 Errores
       
-      Tiempo transcurrido 00:00:00.93
+      Tiempo transcurrido 00:00:00.92
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -200,19 +200,19 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
       
       The C compiler identification is MSVC, found in:
-        D:/AI/Pysics/build-msvc-x64/CMakeFiles/4.0.1/CompilerIdC/CompilerIdC.exe
+        D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/4.0.1/CompilerIdC/CompilerIdC.exe
       
   -
     kind: "try_compile-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
       - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "deps/glfw-3.4/CMakeLists.txt:3 (project)"
+      - "build-msvc-x64/_deps/glfw-src/CMakeLists.txt:3 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/AI/Pysics/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-98gb0g"
-      binary: "D:/AI/Pysics/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-98gb0g"
+      source: "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-m1zdjl"
+      binary: "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-m1zdjl"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -221,40 +221,40 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/AI/Pysics/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-98gb0g'
+        Change Dir: 'D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-m1zdjl'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1c63f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        Versión de MSBuild 17.14.10+8b8e13593 para .NET Framework
-        Compilación iniciada a las 19/08/2025 5:29:16 p. m..
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b981d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Versi├│n de MSBuild 17.14.10+8b8e13593 para .NET Framework
+        Compilaci├│n iniciada a las 2/09/2025 9:47:43 p.┬ám..
         
-        Proyecto "D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-98gb0g\\cmTC_1c63f.vcxproj" en nodo 1 (destinos predeterminados).
+        Proyecto "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-m1zdjl\\cmTC_b981d.vcxproj" en nodo 1 (destinos predeterminados).
         PrepareForBuild:
-          Creando directorio "cmTC_1c63f.dir\\Debug\\".
-          La salida estructurada está habilitada. El formato del diagnóstico del compilador reflejará la jerarquía de errores. Consulte https://aka.ms/cpp/structured-output para obtener más detalles.
-          Creando directorio "D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-98gb0g\\Debug\\".
-          Creando directorio "cmTC_1c63f.dir\\Debug\\cmTC_1c63f.tlog\\".
+          Creando directorio "cmTC_b981d.dir\\Debug\\".
+          La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
+          Creando directorio "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-m1zdjl\\Debug\\".
+          Creando directorio "cmTC_b981d.dir\\Debug\\cmTC_b981d.tlog\\".
         InitializeBuildStatus:
-          Se creará "cmTC_1c63f.dir\\Debug\\cmTC_1c63f.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
-          Aplicando tarea Touch a "cmTC_1c63f.dir\\Debug\\cmTC_1c63f.tlog\\unsuccessfulbuild".
+          Se crear├í "cmTC_b981d.dir\\Debug\\cmTC_b981d.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_b981d.dir\\Debug\\cmTC_b981d.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1c63f.dir\\Debug\\\\" /Fd"cmTC_1c63f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCCompilerABI.c"
-          Compilador de optimización de C/C++ de Microsoft (R) versión 19.44.35208 para x64
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b981d.dir\\Debug\\\\" /Fd"cmTC_b981d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCCompilerABI.c"
+          Compilador de optimizaci├│n de C/C++ de Microsoft (R) versi├│n 19.44.35208 para x64
           (C) Microsoft Corporation. Todos los derechos reservados.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1c63f.dir\\Debug\\\\" /Fd"cmTC_1c63f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b981d.dir\\Debug\\\\" /Fd"cmTC_b981d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-98gb0g\\Debug\\cmTC_1c63f.exe" /INCREMENTAL /ILK:"cmTC_1c63f.dir\\Debug\\cmTC_1c63f.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/AI/Pysics/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-98gb0g/Debug/cmTC_1c63f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/AI/Pysics/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-98gb0g/Debug/cmTC_1c63f.lib" /MACHINE:X64  /machine:x64 cmTC_1c63f.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_1c63f.vcxproj -> D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-98gb0g\\Debug\\cmTC_1c63f.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-m1zdjl\\Debug\\cmTC_b981d.exe" /INCREMENTAL /ILK:"cmTC_b981d.dir\\Debug\\cmTC_b981d.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-m1zdjl/Debug/cmTC_b981d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-m1zdjl/Debug/cmTC_b981d.lib" /MACHINE:X64  /machine:x64 cmTC_b981d.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_b981d.vcxproj -> D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-m1zdjl\\Debug\\cmTC_b981d.exe
         FinalizeBuildStatus:
-          Se eliminará el archivo "cmTC_1c63f.dir\\Debug\\cmTC_1c63f.tlog\\unsuccessfulbuild".
-          Aplicando tarea Touch a "cmTC_1c63f.dir\\Debug\\cmTC_1c63f.tlog\\cmTC_1c63f.lastbuildstate".
-        Compilación del proyecto terminada "D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-98gb0g\\cmTC_1c63f.vcxproj" (destinos predeterminados).
+          Se eliminar├í el archivo "cmTC_b981d.dir\\Debug\\cmTC_b981d.tlog\\unsuccessfulbuild".
+          Aplicando tarea Touch a "cmTC_b981d.dir\\Debug\\cmTC_b981d.tlog\\cmTC_b981d.lastbuildstate".
+        Compilaci├│n del proyecto terminada "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-m1zdjl\\cmTC_b981d.vcxproj" (destinos predeterminados).
         
-        Compilación correcta.
+        Compilaci├│n correcta.
             0 Advertencia(s)
             0 Errores
         
-        Tiempo transcurrido 00:00:00.89
+        Tiempo transcurrido 00:00:00.91
         
       exitCode: 0
   -
@@ -262,7 +262,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
       - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "deps/glfw-3.4/CMakeLists.txt:3 (project)"
+      - "build-msvc-x64/_deps/glfw-src/CMakeLists.txt:3 (project)"
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
@@ -280,7 +280,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
       - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:264 (cmake_determine_linker_id)"
       - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "deps/glfw-3.4/CMakeLists.txt:3 (project)"
+      - "build-msvc-x64/_deps/glfw-src/CMakeLists.txt:3 (project)"
     message: |
       Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
       Microsoft (R) Incremental Linker Version 14.44.35208.0
@@ -292,55 +292,55 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.0/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
       - "C:/Program Files/CMake/share/cmake-4.0/Modules/FindThreads.cmake:97 (check_c_source_compiles)"
       - "C:/Program Files/CMake/share/cmake-4.0/Modules/FindThreads.cmake:163 (_threads_check_libc)"
-      - "deps/glfw-3.4/CMakeLists.txt:60 (find_package)"
+      - "build-msvc-x64/_deps/glfw-src/CMakeLists.txt:60 (find_package)"
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "D:/AI/Pysics/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-0v7yq0"
-      binary: "D:/AI/Pysics/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-0v7yq0"
+      source: "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-y9s7za"
+      binary: "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-y9s7za"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "D:/AI/Pysics/deps/glfw-3.4/CMake/modules"
+      CMAKE_MODULE_PATH: "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-src/CMake/modules"
     buildResult:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'D:/AI/Pysics/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-0v7yq0'
+        Change Dir: 'D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-y9s7za'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ad692.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        Versión de MSBuild 17.14.10+8b8e13593 para .NET Framework
-        Compilación iniciada a las 19/08/2025 5:29:17 p. m..
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d8d00.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Versi├│n de MSBuild 17.14.10+8b8e13593 para .NET Framework
+        Compilaci├│n iniciada a las 2/09/2025 9:47:45 p.┬ám..
         
-        Proyecto "D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-0v7yq0\\cmTC_ad692.vcxproj" en nodo 1 (destinos predeterminados).
+        Proyecto "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-y9s7za\\cmTC_d8d00.vcxproj" en nodo 1 (destinos predeterminados).
         PrepareForBuild:
-          Creando directorio "cmTC_ad692.dir\\Debug\\".
-          La salida estructurada está habilitada. El formato del diagnóstico del compilador reflejará la jerarquía de errores. Consulte https://aka.ms/cpp/structured-output para obtener más detalles.
-          Creando directorio "D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-0v7yq0\\Debug\\".
-          Creando directorio "cmTC_ad692.dir\\Debug\\cmTC_ad692.tlog\\".
+          Creando directorio "cmTC_d8d00.dir\\Debug\\".
+          La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
+          Creando directorio "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-y9s7za\\Debug\\".
+          Creando directorio "cmTC_d8d00.dir\\Debug\\cmTC_d8d00.tlog\\".
         InitializeBuildStatus:
-          Se creará "cmTC_ad692.dir\\Debug\\cmTC_ad692.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
-          Aplicando tarea Touch a "cmTC_ad692.dir\\Debug\\cmTC_ad692.tlog\\unsuccessfulbuild".
+          Se crear├í "cmTC_d8d00.dir\\Debug\\cmTC_d8d00.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_d8d00.dir\\Debug\\cmTC_d8d00.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ad692.dir\\Debug\\\\" /Fd"cmTC_ad692.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-0v7yq0\\src.c"
-          Compilador de optimización de C/C++ de Microsoft (R) versión 19.44.35208 para x64
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d8d00.dir\\Debug\\\\" /Fd"cmTC_d8d00.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-y9s7za\\src.c"
+          Compilador de optimizaci├│n de C/C++ de Microsoft (R) versi├│n 19.44.35208 para x64
           (C) Microsoft Corporation. Todos los derechos reservados.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ad692.dir\\Debug\\\\" /Fd"cmTC_ad692.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-0v7yq0\\src.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d8d00.dir\\Debug\\\\" /Fd"cmTC_d8d00.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-y9s7za\\src.c"
           src.c
-        D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-0v7yq0\\src.c(1,10): error C1083: No se puede abrir el archivo incluir: 'pthread.h': No such file or directory [D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-0v7yq0\\cmTC_ad692.vcxproj]
-        Compilación del proyecto terminada "D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-0v7yq0\\cmTC_ad692.vcxproj" (destinos predeterminados) -- ERROR.
+        D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-y9s7za\\src.c(1,10): error C1083: No se puede abrir el archivo incluir: 'pthread.h': No such file or directory [D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-y9s7za\\cmTC_d8d00.vcxproj]
+        Compilaci├│n del proyecto terminada "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-y9s7za\\cmTC_d8d00.vcxproj" (destinos predeterminados) -- ERROR.
         
         ERROR al compilar.
         
-        "D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-0v7yq0\\cmTC_ad692.vcxproj" (destino predeterminado) (1) ->
+        "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-y9s7za\\cmTC_d8d00.vcxproj" (destino predeterminado) (1) ->
         (ClCompile destino) -> 
-          D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-0v7yq0\\src.c(1,10): error C1083: No se puede abrir el archivo incluir: 'pthread.h': No such file or directory [D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-0v7yq0\\cmTC_ad692.vcxproj]
+          D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-y9s7za\\src.c(1,10): error C1083: No se puede abrir el archivo incluir: 'pthread.h': No such file or directory [D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-y9s7za\\cmTC_d8d00.vcxproj]
         
             0 Advertencia(s)
             1 Errores
         
-        Tiempo transcurrido 00:00:00.56
+        Tiempo transcurrido 00:00:00.52
         
       exitCode: 1
   -
@@ -349,57 +349,57 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.0/Modules/CheckLibraryExists.cmake:112 (try_compile)"
       - "C:/Program Files/CMake/share/cmake-4.0/Modules/FindThreads.cmake:112 (check_library_exists)"
       - "C:/Program Files/CMake/share/cmake-4.0/Modules/FindThreads.cmake:175 (_threads_check_lib)"
-      - "deps/glfw-3.4/CMakeLists.txt:60 (find_package)"
+      - "build-msvc-x64/_deps/glfw-src/CMakeLists.txt:60 (find_package)"
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "D:/AI/Pysics/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-ofbeuh"
-      binary: "D:/AI/Pysics/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-ofbeuh"
+      source: "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-ed6pmt"
+      binary: "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-ed6pmt"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "D:/AI/Pysics/deps/glfw-3.4/CMake/modules"
+      CMAKE_MODULE_PATH: "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-src/CMake/modules"
     buildResult:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'D:/AI/Pysics/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-ofbeuh'
+        Change Dir: 'D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-ed6pmt'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_88b2a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        Versión de MSBuild 17.14.10+8b8e13593 para .NET Framework
-        Compilación iniciada a las 19/08/2025 5:29:18 p. m..
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a79e4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Versi├│n de MSBuild 17.14.10+8b8e13593 para .NET Framework
+        Compilaci├│n iniciada a las 2/09/2025 9:47:46 p.┬ám..
         
-        Proyecto "D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ofbeuh\\cmTC_88b2a.vcxproj" en nodo 1 (destinos predeterminados).
+        Proyecto "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ed6pmt\\cmTC_a79e4.vcxproj" en nodo 1 (destinos predeterminados).
         PrepareForBuild:
-          Creando directorio "cmTC_88b2a.dir\\Debug\\".
-          La salida estructurada está habilitada. El formato del diagnóstico del compilador reflejará la jerarquía de errores. Consulte https://aka.ms/cpp/structured-output para obtener más detalles.
-          Creando directorio "D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ofbeuh\\Debug\\".
-          Creando directorio "cmTC_88b2a.dir\\Debug\\cmTC_88b2a.tlog\\".
+          Creando directorio "cmTC_a79e4.dir\\Debug\\".
+          La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
+          Creando directorio "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ed6pmt\\Debug\\".
+          Creando directorio "cmTC_a79e4.dir\\Debug\\cmTC_a79e4.tlog\\".
         InitializeBuildStatus:
-          Se creará "cmTC_88b2a.dir\\Debug\\cmTC_88b2a.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
-          Aplicando tarea Touch a "cmTC_88b2a.dir\\Debug\\cmTC_88b2a.tlog\\unsuccessfulbuild".
+          Se crear├í "cmTC_a79e4.dir\\Debug\\cmTC_a79e4.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_a79e4.dir\\Debug\\cmTC_a79e4.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_88b2a.dir\\Debug\\\\" /Fd"cmTC_88b2a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ofbeuh\\CheckFunctionExists.c"
-          Compilador de optimización de C/C++ de Microsoft (R) versión 19.44.35208 para x64
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a79e4.dir\\Debug\\\\" /Fd"cmTC_a79e4.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ed6pmt\\CheckFunctionExists.c"
+          Compilador de optimizaci├│n de C/C++ de Microsoft (R) versi├│n 19.44.35208 para x64
           (C) Microsoft Corporation. Todos los derechos reservados.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_88b2a.dir\\Debug\\\\" /Fd"cmTC_88b2a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ofbeuh\\CheckFunctionExists.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a79e4.dir\\Debug\\\\" /Fd"cmTC_a79e4.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ed6pmt\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ofbeuh\\Debug\\cmTC_88b2a.exe" /INCREMENTAL /ILK:"cmTC_88b2a.dir\\Debug\\cmTC_88b2a.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/AI/Pysics/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-ofbeuh/Debug/cmTC_88b2a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/AI/Pysics/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-ofbeuh/Debug/cmTC_88b2a.lib" /MACHINE:X64  /machine:x64 cmTC_88b2a.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: no se puede abrir el archivo 'pthreads.lib' [D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ofbeuh\\cmTC_88b2a.vcxproj]
-        Compilación del proyecto terminada "D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ofbeuh\\cmTC_88b2a.vcxproj" (destinos predeterminados) -- ERROR.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ed6pmt\\Debug\\cmTC_a79e4.exe" /INCREMENTAL /ILK:"cmTC_a79e4.dir\\Debug\\cmTC_a79e4.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-ed6pmt/Debug/cmTC_a79e4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-ed6pmt/Debug/cmTC_a79e4.lib" /MACHINE:X64  /machine:x64 cmTC_a79e4.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: no se puede abrir el archivo 'pthreads.lib' [D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ed6pmt\\cmTC_a79e4.vcxproj]
+        Compilaci├│n del proyecto terminada "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ed6pmt\\cmTC_a79e4.vcxproj" (destinos predeterminados) -- ERROR.
         
         ERROR al compilar.
         
-        "D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ofbeuh\\cmTC_88b2a.vcxproj" (destino predeterminado) (1) ->
+        "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ed6pmt\\cmTC_a79e4.vcxproj" (destino predeterminado) (1) ->
         (Link destino) -> 
-          LINK : fatal error LNK1104: no se puede abrir el archivo 'pthreads.lib' [D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ofbeuh\\cmTC_88b2a.vcxproj]
+          LINK : fatal error LNK1104: no se puede abrir el archivo 'pthreads.lib' [D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ed6pmt\\cmTC_a79e4.vcxproj]
         
             0 Advertencia(s)
             1 Errores
         
-        Tiempo transcurrido 00:00:00.62
+        Tiempo transcurrido 00:00:00.66
         
       exitCode: 1
   -
@@ -408,57 +408,57 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.0/Modules/CheckLibraryExists.cmake:112 (try_compile)"
       - "C:/Program Files/CMake/share/cmake-4.0/Modules/FindThreads.cmake:112 (check_library_exists)"
       - "C:/Program Files/CMake/share/cmake-4.0/Modules/FindThreads.cmake:176 (_threads_check_lib)"
-      - "deps/glfw-3.4/CMakeLists.txt:60 (find_package)"
+      - "build-msvc-x64/_deps/glfw-src/CMakeLists.txt:60 (find_package)"
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "D:/AI/Pysics/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-ty23l2"
-      binary: "D:/AI/Pysics/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-ty23l2"
+      source: "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-yvx0to"
+      binary: "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-yvx0to"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "D:/AI/Pysics/deps/glfw-3.4/CMake/modules"
+      CMAKE_MODULE_PATH: "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-src/CMake/modules"
     buildResult:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'D:/AI/Pysics/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-ty23l2'
+        Change Dir: 'D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-yvx0to'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_99d56.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        Versión de MSBuild 17.14.10+8b8e13593 para .NET Framework
-        Compilación iniciada a las 19/08/2025 5:29:19 p. m..
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a1577.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Versi├│n de MSBuild 17.14.10+8b8e13593 para .NET Framework
+        Compilaci├│n iniciada a las 2/09/2025 9:47:47 p.┬ám..
         
-        Proyecto "D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ty23l2\\cmTC_99d56.vcxproj" en nodo 1 (destinos predeterminados).
+        Proyecto "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-yvx0to\\cmTC_a1577.vcxproj" en nodo 1 (destinos predeterminados).
         PrepareForBuild:
-          Creando directorio "cmTC_99d56.dir\\Debug\\".
-          La salida estructurada está habilitada. El formato del diagnóstico del compilador reflejará la jerarquía de errores. Consulte https://aka.ms/cpp/structured-output para obtener más detalles.
-          Creando directorio "D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ty23l2\\Debug\\".
-          Creando directorio "cmTC_99d56.dir\\Debug\\cmTC_99d56.tlog\\".
+          Creando directorio "cmTC_a1577.dir\\Debug\\".
+          La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
+          Creando directorio "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-yvx0to\\Debug\\".
+          Creando directorio "cmTC_a1577.dir\\Debug\\cmTC_a1577.tlog\\".
         InitializeBuildStatus:
-          Se creará "cmTC_99d56.dir\\Debug\\cmTC_99d56.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
-          Aplicando tarea Touch a "cmTC_99d56.dir\\Debug\\cmTC_99d56.tlog\\unsuccessfulbuild".
+          Se crear├í "cmTC_a1577.dir\\Debug\\cmTC_a1577.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_a1577.dir\\Debug\\cmTC_a1577.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_99d56.dir\\Debug\\\\" /Fd"cmTC_99d56.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ty23l2\\CheckFunctionExists.c"
-          Compilador de optimización de C/C++ de Microsoft (R) versión 19.44.35208 para x64
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a1577.dir\\Debug\\\\" /Fd"cmTC_a1577.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-yvx0to\\CheckFunctionExists.c"
+          Compilador de optimizaci├│n de C/C++ de Microsoft (R) versi├│n 19.44.35208 para x64
           (C) Microsoft Corporation. Todos los derechos reservados.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_99d56.dir\\Debug\\\\" /Fd"cmTC_99d56.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ty23l2\\CheckFunctionExists.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a1577.dir\\Debug\\\\" /Fd"cmTC_a1577.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-yvx0to\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ty23l2\\Debug\\cmTC_99d56.exe" /INCREMENTAL /ILK:"cmTC_99d56.dir\\Debug\\cmTC_99d56.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/AI/Pysics/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-ty23l2/Debug/cmTC_99d56.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/AI/Pysics/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-ty23l2/Debug/cmTC_99d56.lib" /MACHINE:X64  /machine:x64 cmTC_99d56.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: no se puede abrir el archivo 'pthread.lib' [D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ty23l2\\cmTC_99d56.vcxproj]
-        Compilación del proyecto terminada "D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ty23l2\\cmTC_99d56.vcxproj" (destinos predeterminados) -- ERROR.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-yvx0to\\Debug\\cmTC_a1577.exe" /INCREMENTAL /ILK:"cmTC_a1577.dir\\Debug\\cmTC_a1577.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-yvx0to/Debug/cmTC_a1577.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-yvx0to/Debug/cmTC_a1577.lib" /MACHINE:X64  /machine:x64 cmTC_a1577.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: no se puede abrir el archivo 'pthread.lib' [D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-yvx0to\\cmTC_a1577.vcxproj]
+        Compilaci├│n del proyecto terminada "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-yvx0to\\cmTC_a1577.vcxproj" (destinos predeterminados) -- ERROR.
         
         ERROR al compilar.
         
-        "D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ty23l2\\cmTC_99d56.vcxproj" (destino predeterminado) (1) ->
+        "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-yvx0to\\cmTC_a1577.vcxproj" (destino predeterminado) (1) ->
         (Link destino) -> 
-          LINK : fatal error LNK1104: no se puede abrir el archivo 'pthread.lib' [D:\\AI\\Pysics\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ty23l2\\cmTC_99d56.vcxproj]
+          LINK : fatal error LNK1104: no se puede abrir el archivo 'pthread.lib' [D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-yvx0to\\cmTC_a1577.vcxproj]
         
             0 Advertencia(s)
             1 Errores
         
-        Tiempo transcurrido 00:00:00.60
+        Tiempo transcurrido 00:00:00.68
         
       exitCode: 1
 ...

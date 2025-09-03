@@ -1,6 +1,6 @@
-^D:\AI\PYSICS\CMAKELISTS.TXT
+^D:\EVIROMENT\OXIDE\OXIDEENGINE\CMAKELISTS.TXT
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/AI/Pysics -BD:/AI/Pysics/build-msvc-x64 --check-stamp-file D:/AI/Pysics/build-msvc-x64/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/EVIROMENT/Oxide/OxideEngine -BD:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64 --check-stamp-file D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

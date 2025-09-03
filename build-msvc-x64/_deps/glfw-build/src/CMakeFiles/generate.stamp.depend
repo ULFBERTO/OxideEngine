@@ -1,3 +1,3 @@
 # CMake generation dependency list for this directory.
-D:/AI/Pysics/deps/glfw-3.4/CMake/glfw3.pc.in
-D:/AI/Pysics/deps/glfw-3.4/src/CMakeLists.txt
+D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-src/CMake/glfw3.pc.in
+D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-src/src/CMakeLists.txt

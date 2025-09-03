@@ -4,6 +4,9 @@ message(VERBOSE "Executing download step for imgui")
 
 block(SCOPE_FOR VARIABLES)
 
-message(VERBOSE [[Using SOURCE_DIR as is]])
+include("D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/fc-stamp/imgui/download-imgui.cmake")
+include("D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/fc-stamp/imgui/verify-imgui.cmake")
+include("D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/fc-stamp/imgui/extract-imgui.cmake")
+
 
 endblock()

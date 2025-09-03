@@ -1,31 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\AI\Pysics\deps\imgui-1.91.5-docking\imgui.cpp">
+    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\imgui-src\imgui.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\AI\Pysics\deps\imgui-1.91.5-docking\imgui_draw.cpp">
+    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\imgui-src\imgui_draw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\AI\Pysics\deps\imgui-1.91.5-docking\imgui_tables.cpp">
+    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\imgui-src\imgui_tables.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\AI\Pysics\deps\imgui-1.91.5-docking\imgui_widgets.cpp">
+    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\imgui-src\imgui_widgets.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\AI\Pysics\deps\imgui-1.91.5-docking\backends\imgui_impl_glfw.cpp">
+    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\imgui-src\backends\imgui_impl_glfw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\AI\Pysics\deps\imgui-1.91.5-docking\backends\imgui_impl_opengl3.cpp">
+    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\imgui-src\backends\imgui_impl_opengl3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\AI\Pysics\CMakeLists.txt" />
+    <CustomBuild Include="D:\EVIROMENT\Oxide\OxideEngine\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{E8485703-0E91-3B40-A693-AB9C9FA608D2}</UniqueIdentifier>
+      <UniqueIdentifier>{E1F078D7-26D8-310B-BD3A-BEC1E25FC17F}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

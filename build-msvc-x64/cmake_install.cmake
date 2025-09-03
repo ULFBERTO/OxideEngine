@@ -1,4 +1,4 @@
-# Install script for directory: D:/AI/Pysics
+# Install script for directory: D:/EVIROMENT/Oxide/OxideEngine
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,37 +34,37 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/AI/Pysics/build-msvc-x64/_deps/glfw-build/cmake_install.cmake")
+  include("D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-build/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/AI/Pysics/build-msvc-x64/_deps/glad-build/cmake_install.cmake")
+  include("D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glad-build/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "D:/AI/Pysics/build-msvc-x64/Debug/MarioEngine.exe")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/Debug/MarioEngine.exe")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "D:/AI/Pysics/build-msvc-x64/Release/MarioEngine.exe")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/Release/MarioEngine.exe")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "D:/AI/Pysics/build-msvc-x64/MinSizeRel/MarioEngine.exe")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/MinSizeRel/MarioEngine.exe")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "D:/AI/Pysics/build-msvc-x64/RelWithDebInfo/MarioEngine.exe")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/RelWithDebInfo/MarioEngine.exe")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE OPTIONAL FILES
-    "D:/AI/Pysics/config.txt"
-    "D:/AI/Pysics/imgui.ini"
+    "D:/EVIROMENT/Oxide/OxideEngine/config.txt"
+    "D:/EVIROMENT/Oxide/OxideEngine/imgui.ini"
     )
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "D:/AI/Pysics/build-msvc-x64/install_local_manifest.txt"
+  file(WRITE "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -80,6 +80,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "D:/AI/Pysics/build-msvc-x64/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

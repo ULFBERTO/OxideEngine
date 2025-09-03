@@ -17,5 +17,5 @@ C:/Program Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-MSVC-C.cm
 C:/Program Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-MSVC.cmake
 C:/Program Files/CMake/share/cmake-4.0/Modules/Platform/Windows-MSVC-C.cmake
 C:/Program Files/CMake/share/cmake-4.0/Modules/Platform/Windows-MSVC.cmake
-D:/AI/Pysics/build-msvc-x64/CMakeFiles/4.0.1/CMakeCCompiler.cmake
-D:/AI/Pysics/deps/glad-0.1.36/CMakeLists.txt
+D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/4.0.1/CMakeCCompiler.cmake
+D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glad-src/CMakeLists.txt
