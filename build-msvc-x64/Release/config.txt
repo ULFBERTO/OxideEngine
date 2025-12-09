@@ -1,0 +1,8 @@
+# Configuracion del motor grafico
+project_name=MarioEngine
+window_title=MarioEngine - Motor Grafico
+
+# Tamano del cubo (radio, en unidades del espacio NDC transformado por la camara)
+cube_size=2.0
+# Cantidad de particulas a simular/renderizar
+particle_count=2000

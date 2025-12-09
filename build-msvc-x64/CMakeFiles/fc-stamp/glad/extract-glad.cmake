@@ -5,8 +5,8 @@ cmake_minimum_required(VERSION ${CMAKE_VERSION}) # this file comes with cmake
 
 # Make file names absolute:
 #
-get_filename_component(filename "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glad-tmp/v0.1.36.tar.gz" ABSOLUTE)
-get_filename_component(directory "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glad-src" ABSOLUTE)
+get_filename_component(filename "C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glad-tmp/v0.1.36.tar.gz" ABSOLUTE)
+get_filename_component(directory "C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glad-src" ABSOLUTE)
 
 message(VERBOSE "extracting...
      src='${filename}'
@@ -28,8 +28,8 @@ file(MAKE_DIRECTORY "${ut_dir}")
 
 # Extract it:
 #
-message(VERBOSE "extracting... [tar xfz]")
-execute_process(COMMAND ${CMAKE_COMMAND} -E tar xfz ${filename} --touch
+message(VERBOSE "extracting... [tar xf]")
+execute_process(COMMAND ${CMAKE_COMMAND} -E tar xf ${filename} --touch
   WORKING_DIRECTORY ${ut_dir}
   RESULT_VARIABLE rv
 )

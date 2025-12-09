@@ -22,14 +22,14 @@ function(check_file_hash has_hash hash_is_good)
   set("${has_hash}" TRUE PARENT_SCOPE)
 
   message(VERBOSE "verifying file...
-       file='D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glad-tmp/v0.1.36.tar.gz'")
+       file='C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glad-tmp/v0.1.36.tar.gz'")
 
-  file("" "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glad-tmp/v0.1.36.tar.gz" actual_value)
+  file("" "C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glad-tmp/v0.1.36.tar.gz" actual_value)
 
   if(NOT "${actual_value}" STREQUAL "")
     set("${hash_is_good}" FALSE PARENT_SCOPE)
     message(VERBOSE " hash of
-    D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glad-tmp/v0.1.36.tar.gz
+    C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glad-tmp/v0.1.36.tar.gz
   does not match expected value
     expected: ''
       actual: '${actual_value}'")
@@ -71,32 +71,32 @@ function(sleep_before_download attempt)
   execute_process(COMMAND "${CMAKE_COMMAND}" -E sleep "${sleep_seconds}")
 endfunction()
 
-if(EXISTS "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glad-tmp/v0.1.36.tar.gz")
+if(EXISTS "C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glad-tmp/v0.1.36.tar.gz")
   check_file_hash(has_hash hash_is_good)
   if(has_hash)
     if(hash_is_good)
       message(VERBOSE "File already exists and hash match (skip download):
-  file='D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glad-tmp/v0.1.36.tar.gz'
+  file='C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glad-tmp/v0.1.36.tar.gz'
   =''"
       )
       return()
     else()
       message(VERBOSE "File already exists but hash mismatch. Removing...")
-      file(REMOVE "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glad-tmp/v0.1.36.tar.gz")
+      file(REMOVE "C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glad-tmp/v0.1.36.tar.gz")
     endif()
   else()
     message(VERBOSE "File already exists but no hash specified (use URL_HASH):
-  file='D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glad-tmp/v0.1.36.tar.gz'
+  file='C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glad-tmp/v0.1.36.tar.gz'
 Old file will be removed and new file downloaded from URL."
     )
-    file(REMOVE "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glad-tmp/v0.1.36.tar.gz")
+    file(REMOVE "C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glad-tmp/v0.1.36.tar.gz")
   endif()
 endif()
 
 set(retry_number 5)
 
 message(VERBOSE "Downloading...
-   dst='D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glad-tmp/v0.1.36.tar.gz'
+   dst='C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glad-tmp/v0.1.36.tar.gz'
    timeout='none'
    inactivity timeout='none'"
 )
@@ -119,7 +119,7 @@ foreach(i RANGE ${retry_number})
 
       file(
         DOWNLOAD
-        "${url}" "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glad-tmp/v0.1.36.tar.gz"
+        "${url}" "C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glad-tmp/v0.1.36.tar.gz"
         SHOW_PROGRESS
         # no TIMEOUT
         # no INACTIVITY_TIMEOUT
@@ -136,7 +136,7 @@ foreach(i RANGE ${retry_number})
         check_file_hash(has_hash hash_is_good)
         if(has_hash AND NOT hash_is_good)
           message(VERBOSE "Hash mismatch, removing...")
-          file(REMOVE "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glad-tmp/v0.1.36.tar.gz")
+          file(REMOVE "C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glad-tmp/v0.1.36.tar.gz")
         else()
           message(VERBOSE "Downloading... done")
           return()

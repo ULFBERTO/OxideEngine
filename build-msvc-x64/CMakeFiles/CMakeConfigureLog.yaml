@@ -4,16 +4,70 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineSystem.cmake:212 (message)"
       - "CMakeLists.txt:17 (project)"
     message: |
-      The system is: Windows - 10.0.19045 - AMD64
+      The system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\PowerShell\\7"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\EF14D\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files (x86)\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\180\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\DTS\\Binn\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files (x86)\\IncrediBuild"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\YA10F\\.cargo\\bin"
+        - "C:\\Users\\YA10F\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\YA10F\\AppData\\Local\\Programs\\Kiro\\bin"
+        - "C:\\Users\\YA10F\\.dotnet\\tools"
+        - "C:\\Users\\EF14D\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\CMake\\bin"
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:17 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
@@ -23,13 +77,13 @@ events:
       
       The output was:
       0
-      Versi├│n de MSBuild 17.14.10+8b8e13593 para .NET Framework
-      Compilaci├│n iniciada a las 2/09/2025 9:47:36 p.┬ám..
+      Versi├│n de MSBuild 17.14.23+b0019275e para .NET Framework
+      Compilaci├│n iniciada a las 9/12/2025 2:31:02ÔÇ»p.ÔÇ»m..
       
-      Proyecto "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\4.0.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" en nodo 1 (destinos predeterminados).
+      Proyecto "C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\4.2.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" en nodo 1 (destinos predeterminados).
       PrepareForBuild:
         Creando directorio "Debug\\".
-        La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
         Creando directorio "Debug\\CompilerIdCXX.tlog\\".
       InitializeBuildStatus:
         Se crear├í "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
@@ -39,7 +93,7 @@ events:
         CMakeCXXCompilerId.cpp
       Link:
         C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
-        CompilerIdCXX.vcxproj -> D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\4.0.1\\CompilerIdCXX\\CompilerIdCXX.exe
+        CompilerIdCXX.vcxproj -> C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\4.2.0\\CompilerIdCXX\\CompilerIdCXX.exe
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
         :VCEnd
@@ -47,13 +101,13 @@ events:
       FinalizeBuildStatus:
         Se eliminar├í el archivo "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
         Aplicando tarea Touch a "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
-      Compilaci├│n del proyecto terminada "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\4.0.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (destinos predeterminados).
+      Compilaci├│n del proyecto terminada "C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\4.2.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (destinos predeterminados).
       
       Compilaci├│n correcta.
           0 Advertencia(s)
           0 Errores
       
-      Tiempo transcurrido 00:00:01.19
+      Tiempo transcurrido 00:00:00.86
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -61,19 +115,745 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
       
       The CXX compiler identification is MSVC, found in:
-        D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/4.0.1/CompilerIdCXX/CompilerIdCXX.exe
+        C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/CMakeFiles/4.2.0/CompilerIdCXX/CompilerIdCXX.exe
       
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:103 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:17 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Program Files/PowerShell/7/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/EF14D/AppData/Local/nvm/"
+      - "C:/nvm4w/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files (x86)/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/180/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/170/DTS/Binn/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files (x86)/IncrediBuild/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Users/YA10F/.cargo/bin/"
+      - "C:/Users/YA10F/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/YA10F/AppData/Local/Programs/Kiro/bin/"
+      - "C:/Users/YA10F/.dotnet/tools/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\PowerShell\\7"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\EF14D\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files (x86)\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\180\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\DTS\\Binn\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files (x86)\\IncrediBuild"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\YA10F\\.cargo\\bin"
+        - "C:\\Users\\YA10F\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\YA10F\\AppData\\Local\\Programs\\Kiro\\bin"
+        - "C:\\Users\\YA10F\\.dotnet\\tools"
+        - "C:\\Users\\EF14D\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\CMake\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:17 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Program Files/PowerShell/7/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/EF14D/AppData/Local/nvm/"
+      - "C:/nvm4w/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files (x86)/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/180/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/170/DTS/Binn/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files (x86)/IncrediBuild/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Users/YA10F/.cargo/bin/"
+      - "C:/Users/YA10F/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/YA10F/AppData/Local/Programs/Kiro/bin/"
+      - "C:/Users/YA10F/.dotnet/tools/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link"
+      - "C:/Program Files/PowerShell/7/lld-link.com"
+      - "C:/Program Files/PowerShell/7/lld-link.exe"
+      - "C:/Program Files/PowerShell/7/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Users/EF14D/AppData/Local/nvm/lld-link.com"
+      - "C:/Users/EF14D/AppData/Local/nvm/lld-link.exe"
+      - "C:/Users/EF14D/AppData/Local/nvm/lld-link"
+      - "C:/nvm4w/nodejs/lld-link.com"
+      - "C:/nvm4w/nodejs/lld-link.exe"
+      - "C:/nvm4w/nodejs/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Program Files (x86)/Microsoft SQL Server/170/Tools/Binn/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft SQL Server/170/Tools/Binn/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft SQL Server/170/Tools/Binn/lld-link"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/lld-link.com"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/lld-link.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/lld-link"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/180/Tools/Binn/lld-link.com"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/180/Tools/Binn/lld-link.exe"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/180/Tools/Binn/lld-link"
+      - "C:/Program Files/Microsoft SQL Server/170/DTS/Binn/lld-link.com"
+      - "C:/Program Files/Microsoft SQL Server/170/DTS/Binn/lld-link.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/DTS/Binn/lld-link"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/ProgramData/chocolatey/bin/lld-link.com"
+      - "C:/ProgramData/chocolatey/bin/lld-link.exe"
+      - "C:/ProgramData/chocolatey/bin/lld-link"
+      - "C:/Program Files (x86)/IncrediBuild/lld-link.com"
+      - "C:/Program Files (x86)/IncrediBuild/lld-link.exe"
+      - "C:/Program Files (x86)/IncrediBuild/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
+      - "C:/Users/YA10F/.cargo/bin/lld-link.com"
+      - "C:/Users/YA10F/.cargo/bin/lld-link.exe"
+      - "C:/Users/YA10F/.cargo/bin/lld-link"
+      - "C:/Users/YA10F/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/YA10F/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/YA10F/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/YA10F/AppData/Local/Programs/Kiro/bin/lld-link.com"
+      - "C:/Users/YA10F/AppData/Local/Programs/Kiro/bin/lld-link.exe"
+      - "C:/Users/YA10F/AppData/Local/Programs/Kiro/bin/lld-link"
+      - "C:/Users/YA10F/.dotnet/tools/lld-link.com"
+      - "C:/Users/YA10F/.dotnet/tools/lld-link.exe"
+      - "C:/Users/YA10F/.dotnet/tools/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\PowerShell\\7"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\EF14D\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files (x86)\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\180\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\DTS\\Binn\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files (x86)\\IncrediBuild"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\YA10F\\.cargo\\bin"
+        - "C:\\Users\\YA10F\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\YA10F\\AppData\\Local\\Programs\\Kiro\\bin"
+        - "C:\\Users\\YA10F\\.dotnet\\tools"
+        - "C:\\Users\\EF14D\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\CMake\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:17 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Program Files/PowerShell/7/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/EF14D/AppData/Local/nvm/"
+      - "C:/nvm4w/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files (x86)/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/180/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/170/DTS/Binn/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files (x86)/IncrediBuild/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Users/YA10F/.cargo/bin/"
+      - "C:/Users/YA10F/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/YA10F/AppData/Local/Programs/Kiro/bin/"
+      - "C:/Users/YA10F/.dotnet/tools/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\PowerShell\\7"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\EF14D\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files (x86)\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\180\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\DTS\\Binn\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files (x86)\\IncrediBuild"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\YA10F\\.cargo\\bin"
+        - "C:\\Users\\YA10F\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\YA10F\\AppData\\Local\\Programs\\Kiro\\bin"
+        - "C:\\Users\\YA10F\\.dotnet\\tools"
+        - "C:\\Users\\EF14D\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\CMake\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:17 (project)"
+    mode: "program"
+    variable: "CMAKE_MT"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "mt"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Program Files/PowerShell/7/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/EF14D/AppData/Local/nvm/"
+      - "C:/nvm4w/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files (x86)/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/180/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/170/DTS/Binn/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files (x86)/IncrediBuild/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Users/YA10F/.cargo/bin/"
+      - "C:/Users/YA10F/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/YA10F/AppData/Local/Programs/Kiro/bin/"
+      - "C:/Users/YA10F/.dotnet/tools/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt"
+      - "C:/Program Files/PowerShell/7/mt.com"
+      - "C:/Program Files/PowerShell/7/mt.exe"
+      - "C:/Program Files/PowerShell/7/mt"
+      - "C:/Windows/System32/mt.com"
+      - "C:/Windows/System32/mt.exe"
+      - "C:/Windows/System32/mt"
+      - "C:/Windows/mt.com"
+      - "C:/Windows/mt.exe"
+      - "C:/Windows/mt"
+      - "C:/Windows/System32/wbem/mt.com"
+      - "C:/Windows/System32/wbem/mt.exe"
+      - "C:/Windows/System32/wbem/mt"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt"
+      - "C:/Windows/System32/OpenSSH/mt.com"
+      - "C:/Windows/System32/OpenSSH/mt.exe"
+      - "C:/Windows/System32/OpenSSH/mt"
+      - "C:/Program Files/dotnet/mt.com"
+      - "C:/Program Files/dotnet/mt.exe"
+      - "C:/Program Files/dotnet/mt"
+      - "C:/Users/EF14D/AppData/Local/nvm/mt.com"
+      - "C:/Users/EF14D/AppData/Local/nvm/mt.exe"
+      - "C:/Users/EF14D/AppData/Local/nvm/mt"
+      - "C:/nvm4w/nodejs/mt.com"
+      - "C:/nvm4w/nodejs/mt.exe"
+      - "C:/nvm4w/nodejs/mt"
+      - "C:/Program Files/Git/cmd/mt.com"
+      - "C:/Program Files/Git/cmd/mt.exe"
+      - "C:/Program Files/Git/cmd/mt"
+      - "C:/Program Files (x86)/Microsoft SQL Server/170/Tools/Binn/mt.com"
+      - "C:/Program Files (x86)/Microsoft SQL Server/170/Tools/Binn/mt.exe"
+      - "C:/Program Files (x86)/Microsoft SQL Server/170/Tools/Binn/mt"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/mt.com"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/mt.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/mt"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/180/Tools/Binn/mt.com"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/180/Tools/Binn/mt.exe"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/180/Tools/Binn/mt"
+      - "C:/Program Files/Microsoft SQL Server/170/DTS/Binn/mt.com"
+      - "C:/Program Files/Microsoft SQL Server/170/DTS/Binn/mt.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/DTS/Binn/mt"
+      - "C:/Program Files/Docker/Docker/resources/bin/mt.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/mt.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/mt"
+      - "C:/Program Files/CMake/bin/mt.com"
+      - "C:/Program Files/CMake/bin/mt.exe"
+      - "C:/Program Files/CMake/bin/mt"
+      - "C:/ProgramData/chocolatey/bin/mt.com"
+      - "C:/ProgramData/chocolatey/bin/mt.exe"
+      - "C:/ProgramData/chocolatey/bin/mt"
+      - "C:/Program Files (x86)/IncrediBuild/mt.com"
+      - "C:/Program Files (x86)/IncrediBuild/mt.exe"
+      - "C:/Program Files (x86)/IncrediBuild/mt"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt"
+      - "C:/Users/YA10F/.cargo/bin/mt.com"
+      - "C:/Users/YA10F/.cargo/bin/mt.exe"
+      - "C:/Users/YA10F/.cargo/bin/mt"
+      - "C:/Users/YA10F/AppData/Local/Microsoft/WindowsApps/mt.com"
+      - "C:/Users/YA10F/AppData/Local/Microsoft/WindowsApps/mt.exe"
+      - "C:/Users/YA10F/AppData/Local/Microsoft/WindowsApps/mt"
+      - "C:/Users/YA10F/AppData/Local/Programs/Kiro/bin/mt.com"
+      - "C:/Users/YA10F/AppData/Local/Programs/Kiro/bin/mt.exe"
+      - "C:/Users/YA10F/AppData/Local/Programs/Kiro/bin/mt"
+      - "C:/Users/YA10F/.dotnet/tools/mt.com"
+      - "C:/Users/YA10F/.dotnet/tools/mt.exe"
+      - "C:/Users/YA10F/.dotnet/tools/mt"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\PowerShell\\7"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\EF14D\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files (x86)\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\180\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\DTS\\Binn\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files (x86)\\IncrediBuild"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\YA10F\\.cargo\\bin"
+        - "C:\\Users\\YA10F\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\YA10F\\AppData\\Local\\Programs\\Kiro\\bin"
+        - "C:\\Users\\YA10F\\.dotnet\\tools"
+        - "C:\\Users\\EF14D\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\CMake\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:17 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lib"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Program Files/PowerShell/7/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/EF14D/AppData/Local/nvm/"
+      - "C:/nvm4w/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files (x86)/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/180/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/170/DTS/Binn/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files (x86)/IncrediBuild/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Users/YA10F/.cargo/bin/"
+      - "C:/Users/YA10F/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/YA10F/AppData/Local/Programs/Kiro/bin/"
+      - "C:/Users/YA10F/.dotnet/tools/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\PowerShell\\7"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\EF14D\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files (x86)\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\180\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\DTS\\Binn\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files (x86)\\IncrediBuild"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\YA10F\\.cargo\\bin"
+        - "C:\\Users\\YA10F\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\YA10F\\AppData\\Local\\Programs\\Kiro\\bin"
+        - "C:\\Users\\YA10F\\.dotnet\\tools"
+        - "C:\\Users\\EF14D\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\CMake\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-MSVC.cmake:580 (enable_language)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-MSVC.cmake:553 (__windows_compiler_msvc_enable_rc)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-MSVC-CXX.cmake:6 (__windows_compiler_msvc)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeCXXInformation.cmake:48 (include)"
+      - "CMakeLists.txt:17 (project)"
+    mode: "program"
+    variable: "CMAKE_RC_COMPILER"
+    description: "RC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "rc"
+    candidate_directories:
+      - "C:/Program Files/PowerShell/7/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/EF14D/AppData/Local/nvm/"
+      - "C:/nvm4w/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files (x86)/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/180/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/170/DTS/Binn/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files (x86)/IncrediBuild/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Users/YA10F/.cargo/bin/"
+      - "C:/Users/YA10F/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/YA10F/AppData/Local/Programs/Kiro/bin/"
+      - "C:/Users/YA10F/.dotnet/tools/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files/MarioEngine/bin/"
+      - "C:/Program Files/MarioEngine/sbin/"
+      - "C:/Program Files/MarioEngine/"
+    searched_directories:
+      - "C:/Program Files/PowerShell/7/rc.com"
+      - "C:/Program Files/PowerShell/7/rc.exe"
+      - "C:/Program Files/PowerShell/7/rc"
+      - "C:/Windows/System32/rc.com"
+      - "C:/Windows/System32/rc.exe"
+      - "C:/Windows/System32/rc"
+      - "C:/Windows/rc.com"
+      - "C:/Windows/rc.exe"
+      - "C:/Windows/rc"
+      - "C:/Windows/System32/wbem/rc.com"
+      - "C:/Windows/System32/wbem/rc.exe"
+      - "C:/Windows/System32/wbem/rc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc"
+      - "C:/Windows/System32/OpenSSH/rc.com"
+      - "C:/Windows/System32/OpenSSH/rc.exe"
+      - "C:/Windows/System32/OpenSSH/rc"
+      - "C:/Program Files/dotnet/rc.com"
+      - "C:/Program Files/dotnet/rc.exe"
+      - "C:/Program Files/dotnet/rc"
+      - "C:/Users/EF14D/AppData/Local/nvm/rc.com"
+      - "C:/Users/EF14D/AppData/Local/nvm/rc.exe"
+      - "C:/Users/EF14D/AppData/Local/nvm/rc"
+      - "C:/nvm4w/nodejs/rc.com"
+      - "C:/nvm4w/nodejs/rc.exe"
+      - "C:/nvm4w/nodejs/rc"
+      - "C:/Program Files/Git/cmd/rc.com"
+      - "C:/Program Files/Git/cmd/rc.exe"
+      - "C:/Program Files/Git/cmd/rc"
+      - "C:/Program Files (x86)/Microsoft SQL Server/170/Tools/Binn/rc.com"
+      - "C:/Program Files (x86)/Microsoft SQL Server/170/Tools/Binn/rc.exe"
+      - "C:/Program Files (x86)/Microsoft SQL Server/170/Tools/Binn/rc"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/rc.com"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/rc.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/rc"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/180/Tools/Binn/rc.com"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/180/Tools/Binn/rc.exe"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/180/Tools/Binn/rc"
+      - "C:/Program Files/Microsoft SQL Server/170/DTS/Binn/rc.com"
+      - "C:/Program Files/Microsoft SQL Server/170/DTS/Binn/rc.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/DTS/Binn/rc"
+      - "C:/Program Files/Docker/Docker/resources/bin/rc.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/rc.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/ProgramData/chocolatey/bin/rc.com"
+      - "C:/ProgramData/chocolatey/bin/rc.exe"
+      - "C:/ProgramData/chocolatey/bin/rc"
+      - "C:/Program Files (x86)/IncrediBuild/rc.com"
+      - "C:/Program Files (x86)/IncrediBuild/rc.exe"
+      - "C:/Program Files (x86)/IncrediBuild/rc"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc"
+      - "C:/Users/YA10F/.cargo/bin/rc.com"
+      - "C:/Users/YA10F/.cargo/bin/rc.exe"
+      - "C:/Users/YA10F/.cargo/bin/rc"
+      - "C:/Users/YA10F/AppData/Local/Microsoft/WindowsApps/rc.com"
+      - "C:/Users/YA10F/AppData/Local/Microsoft/WindowsApps/rc.exe"
+      - "C:/Users/YA10F/AppData/Local/Microsoft/WindowsApps/rc"
+      - "C:/Users/YA10F/AppData/Local/Programs/Kiro/bin/rc.com"
+      - "C:/Users/YA10F/AppData/Local/Programs/Kiro/bin/rc.exe"
+      - "C:/Users/YA10F/AppData/Local/Programs/Kiro/bin/rc"
+      - "C:/Users/YA10F/.dotnet/tools/rc.com"
+      - "C:/Users/YA10F/.dotnet/tools/rc.exe"
+      - "C:/Users/YA10F/.dotnet/tools/rc"
+      - "C:/Program Files/bin/rc.com"
+      - "C:/Program Files/bin/rc.exe"
+      - "C:/Program Files/bin/rc"
+      - "C:/Program Files/sbin/rc.com"
+      - "C:/Program Files/sbin/rc.exe"
+      - "C:/Program Files/sbin/rc"
+      - "C:/Program Files/rc.com"
+      - "C:/Program Files/rc.exe"
+      - "C:/Program Files/rc"
+      - "C:/Program Files (x86)/bin/rc.com"
+      - "C:/Program Files (x86)/bin/rc.exe"
+      - "C:/Program Files (x86)/bin/rc"
+      - "C:/Program Files (x86)/sbin/rc.com"
+      - "C:/Program Files (x86)/sbin/rc.exe"
+      - "C:/Program Files (x86)/sbin/rc"
+      - "C:/Program Files (x86)/rc.com"
+      - "C:/Program Files (x86)/rc.exe"
+      - "C:/Program Files (x86)/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Program Files/CMake/sbin/rc.com"
+      - "C:/Program Files/CMake/sbin/rc.exe"
+      - "C:/Program Files/CMake/sbin/rc"
+      - "C:/Program Files/CMake/rc.com"
+      - "C:/Program Files/CMake/rc.exe"
+      - "C:/Program Files/CMake/rc"
+      - "C:/Program Files/MarioEngine/bin/rc.com"
+      - "C:/Program Files/MarioEngine/bin/rc.exe"
+      - "C:/Program Files/MarioEngine/bin/rc"
+      - "C:/Program Files/MarioEngine/sbin/rc.com"
+      - "C:/Program Files/MarioEngine/sbin/rc.exe"
+      - "C:/Program Files/MarioEngine/sbin/rc"
+      - "C:/Program Files/MarioEngine/rc.com"
+      - "C:/Program Files/MarioEngine/rc.exe"
+      - "C:/Program Files/MarioEngine/rc"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\PowerShell\\7"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\EF14D\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files (x86)\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\180\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\DTS\\Binn\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files (x86)\\IncrediBuild"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\YA10F\\.cargo\\bin"
+        - "C:\\Users\\YA10F\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\YA10F\\AppData\\Local\\Programs\\Kiro\\bin"
+        - "C:\\Users\\YA10F\\.dotnet\\tools"
+        - "C:\\Users\\EF14D\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\CMake\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files/MarioEngine"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files/MarioEngine"
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:17 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-rnq5aj"
-      binary: "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-rnq5aj"
+      source: "C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-emgg8n"
+      binary: "C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-emgg8n"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -83,52 +863,51 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-rnq5aj'
+        Change Dir: 'C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-emgg8n'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_64f42.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        Versi├│n de MSBuild 17.14.10+8b8e13593 para .NET Framework
-        Compilaci├│n iniciada a las 2/09/2025 9:47:38 p.┬ám..
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b2b53.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Versi├│n de MSBuild 17.14.23+b0019275e para .NET Framework
+        Compilaci├│n iniciada a las 9/12/2025 2:31:04ÔÇ»p.ÔÇ»m..
         
-        Proyecto "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-rnq5aj\\cmTC_64f42.vcxproj" en nodo 1 (destinos predeterminados).
+        Proyecto "C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-emgg8n\\cmTC_b2b53.vcxproj" en nodo 1 (destinos predeterminados).
         PrepareForBuild:
-          Creando directorio "cmTC_64f42.dir\\Debug\\".
-          La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
-          Creando directorio "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-rnq5aj\\Debug\\".
-          Creando directorio "cmTC_64f42.dir\\Debug\\cmTC_64f42.tlog\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creando directorio "C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-emgg8n\\Debug\\".
+          Creando directorio "cmTC_b2b53.dir\\Debug\\cmTC_b2b53.tlog\\".
         InitializeBuildStatus:
-          Se crear├í "cmTC_64f42.dir\\Debug\\cmTC_64f42.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
-          Aplicando tarea Touch a "cmTC_64f42.dir\\Debug\\cmTC_64f42.tlog\\unsuccessfulbuild".
+          Se crear├í "cmTC_b2b53.dir\\Debug\\cmTC_b2b53.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_b2b53.dir\\Debug\\cmTC_b2b53.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_64f42.dir\\Debug\\\\" /Fd"cmTC_64f42.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp"
-          Compilador de optimizaci├│n de C/C++ de Microsoft (R) versi├│n 19.44.35208 para x64
-          (C) Microsoft Corporation. Todos los derechos reservados.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_64f42.dir\\Debug\\\\" /Fd"cmTC_64f42.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_b2b53.dir\\Debug\\\\" /Fd"cmTC_b2b53.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35221 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_b2b53.dir\\Debug\\\\" /Fd"cmTC_b2b53.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-rnq5aj\\Debug\\cmTC_64f42.exe" /INCREMENTAL /ILK:"cmTC_64f42.dir\\Debug\\cmTC_64f42.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-rnq5aj/Debug/cmTC_64f42.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-rnq5aj/Debug/cmTC_64f42.lib" /MACHINE:X64  /machine:x64 cmTC_64f42.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_64f42.vcxproj -> D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-rnq5aj\\Debug\\cmTC_64f42.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-emgg8n\\Debug\\cmTC_b2b53.exe" /INCREMENTAL /ILK:"cmTC_b2b53.dir\\Debug\\cmTC_b2b53.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-emgg8n/Debug/cmTC_b2b53.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-emgg8n/Debug/cmTC_b2b53.lib" /MACHINE:X64  /machine:x64 cmTC_b2b53.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_b2b53.vcxproj -> C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-emgg8n\\Debug\\cmTC_b2b53.exe
         FinalizeBuildStatus:
-          Se eliminar├í el archivo "cmTC_64f42.dir\\Debug\\cmTC_64f42.tlog\\unsuccessfulbuild".
-          Aplicando tarea Touch a "cmTC_64f42.dir\\Debug\\cmTC_64f42.tlog\\cmTC_64f42.lastbuildstate".
-        Compilaci├│n del proyecto terminada "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-rnq5aj\\cmTC_64f42.vcxproj" (destinos predeterminados).
+          Se eliminar├í el archivo "cmTC_b2b53.dir\\Debug\\cmTC_b2b53.tlog\\unsuccessfulbuild".
+          Aplicando tarea Touch a "cmTC_b2b53.dir\\Debug\\cmTC_b2b53.tlog\\cmTC_b2b53.lastbuildstate".
+        Compilaci├│n del proyecto terminada "C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-emgg8n\\cmTC_b2b53.vcxproj" (destinos predeterminados).
         
         Compilaci├│n correcta.
             0 Advertencia(s)
             0 Errores
         
-        Tiempo transcurrido 00:00:00.87
+        Tiempo transcurrido 00:00:00.60
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:17 (project)"
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
         linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe
         implicit libs: []
         implicit objs: []
@@ -139,20 +918,80 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:264 (cmake_determine_linker_id)"
-      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:17 (project)"
     message: |
       Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
-      Microsoft (R) Incremental Linker Version 14.44.35208.0
+      Microsoft (R) Incremental Linker Version 14.44.35221.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "build-msvc-x64/_deps/glfw-src/CMakeLists.txt:3 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\PowerShell\\7"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\EF14D\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files (x86)\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\180\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\DTS\\Binn\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files (x86)\\IncrediBuild"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\YA10F\\.cargo\\bin"
+        - "C:\\Users\\YA10F\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\YA10F\\AppData\\Local\\Programs\\Kiro\\bin"
+        - "C:\\Users\\YA10F\\.dotnet\\tools"
+        - "C:\\Users\\EF14D\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\CMake\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files/MarioEngine"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files/MarioEngine"
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
       - "build-msvc-x64/_deps/glfw-src/CMakeLists.txt:3 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
@@ -162,13 +1001,13 @@ events:
       
       The output was:
       0
-      Versi├│n de MSBuild 17.14.10+8b8e13593 para .NET Framework
-      Compilaci├│n iniciada a las 2/09/2025 9:47:42 p.┬ám..
+      Versi├│n de MSBuild 17.14.23+b0019275e para .NET Framework
+      Compilaci├│n iniciada a las 9/12/2025 2:31:06ÔÇ»p.ÔÇ»m..
       
-      Proyecto "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\4.0.1\\CompilerIdC\\CompilerIdC.vcxproj" en nodo 1 (destinos predeterminados).
+      Proyecto "C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\4.2.0\\CompilerIdC\\CompilerIdC.vcxproj" en nodo 1 (destinos predeterminados).
       PrepareForBuild:
         Creando directorio "Debug\\".
-        La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
         Creando directorio "Debug\\CompilerIdC.tlog\\".
       InitializeBuildStatus:
         Se crear├í "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
@@ -178,7 +1017,7 @@ events:
         CMakeCCompilerId.c
       Link:
         C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
-        CompilerIdC.vcxproj -> D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\4.0.1\\CompilerIdC\\CompilerIdC.exe
+        CompilerIdC.vcxproj -> C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\4.2.0\\CompilerIdC\\CompilerIdC.exe
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
         :VCEnd
@@ -186,13 +1025,13 @@ events:
       FinalizeBuildStatus:
         Se eliminar├í el archivo "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
         Aplicando tarea Touch a "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
-      Compilaci├│n del proyecto terminada "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\4.0.1\\CompilerIdC\\CompilerIdC.vcxproj" (destinos predeterminados).
+      Compilaci├│n del proyecto terminada "C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\4.2.0\\CompilerIdC\\CompilerIdC.vcxproj" (destinos predeterminados).
       
       Compilaci├│n correcta.
           0 Advertencia(s)
           0 Errores
       
-      Tiempo transcurrido 00:00:00.92
+      Tiempo transcurrido 00:00:00.59
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -200,19 +1039,222 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
       
       The C compiler identification is MSVC, found in:
-        D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/4.0.1/CompilerIdC/CompilerIdC.exe
+        C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/CMakeFiles/4.2.0/CompilerIdC/CompilerIdC.exe
       
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "build-msvc-x64/_deps/glfw-src/CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Program Files/PowerShell/7/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/EF14D/AppData/Local/nvm/"
+      - "C:/nvm4w/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files (x86)/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/180/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/170/DTS/Binn/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files (x86)/IncrediBuild/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Users/YA10F/.cargo/bin/"
+      - "C:/Users/YA10F/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/YA10F/AppData/Local/Programs/Kiro/bin/"
+      - "C:/Users/YA10F/.dotnet/tools/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files/MarioEngine/bin/"
+      - "C:/Program Files/MarioEngine/sbin/"
+      - "C:/Program Files/MarioEngine/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link"
+      - "C:/Program Files/PowerShell/7/lld-link.com"
+      - "C:/Program Files/PowerShell/7/lld-link.exe"
+      - "C:/Program Files/PowerShell/7/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Users/EF14D/AppData/Local/nvm/lld-link.com"
+      - "C:/Users/EF14D/AppData/Local/nvm/lld-link.exe"
+      - "C:/Users/EF14D/AppData/Local/nvm/lld-link"
+      - "C:/nvm4w/nodejs/lld-link.com"
+      - "C:/nvm4w/nodejs/lld-link.exe"
+      - "C:/nvm4w/nodejs/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Program Files (x86)/Microsoft SQL Server/170/Tools/Binn/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft SQL Server/170/Tools/Binn/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft SQL Server/170/Tools/Binn/lld-link"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/lld-link.com"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/lld-link.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/lld-link"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/180/Tools/Binn/lld-link.com"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/180/Tools/Binn/lld-link.exe"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/180/Tools/Binn/lld-link"
+      - "C:/Program Files/Microsoft SQL Server/170/DTS/Binn/lld-link.com"
+      - "C:/Program Files/Microsoft SQL Server/170/DTS/Binn/lld-link.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/DTS/Binn/lld-link"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/ProgramData/chocolatey/bin/lld-link.com"
+      - "C:/ProgramData/chocolatey/bin/lld-link.exe"
+      - "C:/ProgramData/chocolatey/bin/lld-link"
+      - "C:/Program Files (x86)/IncrediBuild/lld-link.com"
+      - "C:/Program Files (x86)/IncrediBuild/lld-link.exe"
+      - "C:/Program Files (x86)/IncrediBuild/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
+      - "C:/Users/YA10F/.cargo/bin/lld-link.com"
+      - "C:/Users/YA10F/.cargo/bin/lld-link.exe"
+      - "C:/Users/YA10F/.cargo/bin/lld-link"
+      - "C:/Users/YA10F/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/YA10F/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/YA10F/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/YA10F/AppData/Local/Programs/Kiro/bin/lld-link.com"
+      - "C:/Users/YA10F/AppData/Local/Programs/Kiro/bin/lld-link.exe"
+      - "C:/Users/YA10F/AppData/Local/Programs/Kiro/bin/lld-link"
+      - "C:/Users/YA10F/.dotnet/tools/lld-link.com"
+      - "C:/Users/YA10F/.dotnet/tools/lld-link.exe"
+      - "C:/Users/YA10F/.dotnet/tools/lld-link"
+      - "C:/Program Files/bin/lld-link.com"
+      - "C:/Program Files/bin/lld-link.exe"
+      - "C:/Program Files/bin/lld-link"
+      - "C:/Program Files/sbin/lld-link.com"
+      - "C:/Program Files/sbin/lld-link.exe"
+      - "C:/Program Files/sbin/lld-link"
+      - "C:/Program Files/lld-link.com"
+      - "C:/Program Files/lld-link.exe"
+      - "C:/Program Files/lld-link"
+      - "C:/Program Files (x86)/bin/lld-link.com"
+      - "C:/Program Files (x86)/bin/lld-link.exe"
+      - "C:/Program Files (x86)/bin/lld-link"
+      - "C:/Program Files (x86)/sbin/lld-link.com"
+      - "C:/Program Files (x86)/sbin/lld-link.exe"
+      - "C:/Program Files (x86)/sbin/lld-link"
+      - "C:/Program Files (x86)/lld-link.com"
+      - "C:/Program Files (x86)/lld-link.exe"
+      - "C:/Program Files (x86)/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Program Files/CMake/sbin/lld-link.com"
+      - "C:/Program Files/CMake/sbin/lld-link.exe"
+      - "C:/Program Files/CMake/sbin/lld-link"
+      - "C:/Program Files/CMake/lld-link.com"
+      - "C:/Program Files/CMake/lld-link.exe"
+      - "C:/Program Files/CMake/lld-link"
+      - "C:/Program Files/MarioEngine/bin/lld-link.com"
+      - "C:/Program Files/MarioEngine/bin/lld-link.exe"
+      - "C:/Program Files/MarioEngine/bin/lld-link"
+      - "C:/Program Files/MarioEngine/sbin/lld-link.com"
+      - "C:/Program Files/MarioEngine/sbin/lld-link.exe"
+      - "C:/Program Files/MarioEngine/sbin/lld-link"
+      - "C:/Program Files/MarioEngine/lld-link.com"
+      - "C:/Program Files/MarioEngine/lld-link.exe"
+      - "C:/Program Files/MarioEngine/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\PowerShell\\7"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\EF14D\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files (x86)\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\180\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\DTS\\Binn\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files (x86)\\IncrediBuild"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\YA10F\\.cargo\\bin"
+        - "C:\\Users\\YA10F\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\YA10F\\AppData\\Local\\Programs\\Kiro\\bin"
+        - "C:\\Users\\YA10F\\.dotnet\\tools"
+        - "C:\\Users\\EF14D\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\CMake\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files/MarioEngine"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files/MarioEngine"
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "build-msvc-x64/_deps/glfw-src/CMakeLists.txt:3 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-m1zdjl"
-      binary: "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-m1zdjl"
+      source: "C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-9li92v"
+      binary: "C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-9li92v"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -221,52 +1263,51 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-m1zdjl'
+        Change Dir: 'C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-9li92v'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b981d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        Versi├│n de MSBuild 17.14.10+8b8e13593 para .NET Framework
-        Compilaci├│n iniciada a las 2/09/2025 9:47:43 p.┬ám..
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_cd69f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Versi├│n de MSBuild 17.14.23+b0019275e para .NET Framework
+        Compilaci├│n iniciada a las 9/12/2025 2:31:07ÔÇ»p.ÔÇ»m..
         
-        Proyecto "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-m1zdjl\\cmTC_b981d.vcxproj" en nodo 1 (destinos predeterminados).
+        Proyecto "C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-9li92v\\cmTC_cd69f.vcxproj" en nodo 1 (destinos predeterminados).
         PrepareForBuild:
-          Creando directorio "cmTC_b981d.dir\\Debug\\".
-          La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
-          Creando directorio "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-m1zdjl\\Debug\\".
-          Creando directorio "cmTC_b981d.dir\\Debug\\cmTC_b981d.tlog\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creando directorio "C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-9li92v\\Debug\\".
+          Creando directorio "cmTC_cd69f.dir\\Debug\\cmTC_cd69f.tlog\\".
         InitializeBuildStatus:
-          Se crear├í "cmTC_b981d.dir\\Debug\\cmTC_b981d.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
-          Aplicando tarea Touch a "cmTC_b981d.dir\\Debug\\cmTC_b981d.tlog\\unsuccessfulbuild".
+          Se crear├í "cmTC_cd69f.dir\\Debug\\cmTC_cd69f.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_cd69f.dir\\Debug\\cmTC_cd69f.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b981d.dir\\Debug\\\\" /Fd"cmTC_b981d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCCompilerABI.c"
-          Compilador de optimizaci├│n de C/C++ de Microsoft (R) versi├│n 19.44.35208 para x64
-          (C) Microsoft Corporation. Todos los derechos reservados.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b981d.dir\\Debug\\\\" /Fd"cmTC_b981d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_cd69f.dir\\Debug\\\\" /Fd"cmTC_cd69f.dir\\Debug\\vc143.pdb" /external:W3 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35221 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_cd69f.dir\\Debug\\\\" /Fd"cmTC_cd69f.dir\\Debug\\vc143.pdb" /external:W3 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-m1zdjl\\Debug\\cmTC_b981d.exe" /INCREMENTAL /ILK:"cmTC_b981d.dir\\Debug\\cmTC_b981d.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-m1zdjl/Debug/cmTC_b981d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-m1zdjl/Debug/cmTC_b981d.lib" /MACHINE:X64  /machine:x64 cmTC_b981d.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_b981d.vcxproj -> D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-m1zdjl\\Debug\\cmTC_b981d.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-9li92v\\Debug\\cmTC_cd69f.exe" /INCREMENTAL /ILK:"cmTC_cd69f.dir\\Debug\\cmTC_cd69f.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-9li92v/Debug/cmTC_cd69f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-9li92v/Debug/cmTC_cd69f.lib" /MACHINE:X64  /machine:x64 cmTC_cd69f.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_cd69f.vcxproj -> C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-9li92v\\Debug\\cmTC_cd69f.exe
         FinalizeBuildStatus:
-          Se eliminar├í el archivo "cmTC_b981d.dir\\Debug\\cmTC_b981d.tlog\\unsuccessfulbuild".
-          Aplicando tarea Touch a "cmTC_b981d.dir\\Debug\\cmTC_b981d.tlog\\cmTC_b981d.lastbuildstate".
-        Compilaci├│n del proyecto terminada "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-m1zdjl\\cmTC_b981d.vcxproj" (destinos predeterminados).
+          Se eliminar├í el archivo "cmTC_cd69f.dir\\Debug\\cmTC_cd69f.tlog\\unsuccessfulbuild".
+          Aplicando tarea Touch a "cmTC_cd69f.dir\\Debug\\cmTC_cd69f.tlog\\cmTC_cd69f.lastbuildstate".
+        Compilaci├│n del proyecto terminada "C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-9li92v\\cmTC_cd69f.vcxproj" (destinos predeterminados).
         
         Compilaci├│n correcta.
             0 Advertencia(s)
             0 Errores
         
-        Tiempo transcurrido 00:00:00.91
+        Tiempo transcurrido 00:00:00.56
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "build-msvc-x64/_deps/glfw-src/CMakeLists.txt:3 (project)"
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
         linker tool for 'C': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe
         implicit libs: []
         implicit objs: []
@@ -277,188 +1318,1068 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:264 (cmake_determine_linker_id)"
-      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "build-msvc-x64/_deps/glfw-src/CMakeLists.txt:3 (project)"
     message: |
       Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
-      Microsoft (R) Incremental Linker Version 14.44.35208.0
+      Microsoft (R) Incremental Linker Version 14.44.35221.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
-      - "C:/Program Files/CMake/share/cmake-4.0/Modules/FindThreads.cmake:97 (check_c_source_compiles)"
-      - "C:/Program Files/CMake/share/cmake-4.0/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:160 (check_c_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:226 (_threads_check_libc)"
       - "build-msvc-x64/_deps/glfw-src/CMakeLists.txt:60 (find_package)"
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-y9s7za"
-      binary: "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-y9s7za"
+      source: "C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-rfgtm4"
+      binary: "C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-rfgtm4"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-src/CMake/modules"
+      CMAKE_MODULE_PATH: "C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glfw-src/CMake/modules"
     buildResult:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-y9s7za'
+        Change Dir: 'C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-rfgtm4'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d8d00.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        Versi├│n de MSBuild 17.14.10+8b8e13593 para .NET Framework
-        Compilaci├│n iniciada a las 2/09/2025 9:47:45 p.┬ám..
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_2b84e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Versi├│n de MSBuild 17.14.23+b0019275e para .NET Framework
+        Compilaci├│n iniciada a las 9/12/2025 2:31:08ÔÇ»p.ÔÇ»m..
         
-        Proyecto "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-y9s7za\\cmTC_d8d00.vcxproj" en nodo 1 (destinos predeterminados).
+        Proyecto "C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-rfgtm4\\cmTC_2b84e.vcxproj" en nodo 1 (destinos predeterminados).
         PrepareForBuild:
-          Creando directorio "cmTC_d8d00.dir\\Debug\\".
-          La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
-          Creando directorio "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-y9s7za\\Debug\\".
-          Creando directorio "cmTC_d8d00.dir\\Debug\\cmTC_d8d00.tlog\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creando directorio "C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-rfgtm4\\Debug\\".
+          Creando directorio "cmTC_2b84e.dir\\Debug\\cmTC_2b84e.tlog\\".
         InitializeBuildStatus:
-          Se crear├í "cmTC_d8d00.dir\\Debug\\cmTC_d8d00.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
-          Aplicando tarea Touch a "cmTC_d8d00.dir\\Debug\\cmTC_d8d00.tlog\\unsuccessfulbuild".
+          Se crear├í "cmTC_2b84e.dir\\Debug\\cmTC_2b84e.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_2b84e.dir\\Debug\\cmTC_2b84e.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d8d00.dir\\Debug\\\\" /Fd"cmTC_d8d00.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-y9s7za\\src.c"
-          Compilador de optimizaci├│n de C/C++ de Microsoft (R) versi├│n 19.44.35208 para x64
-          (C) Microsoft Corporation. Todos los derechos reservados.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d8d00.dir\\Debug\\\\" /Fd"cmTC_d8d00.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-y9s7za\\src.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_2b84e.dir\\Debug\\\\" /Fd"cmTC_2b84e.dir\\Debug\\vc143.pdb" /external:W3 /TC /errorReport:queue "C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-rfgtm4\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35221 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_2b84e.dir\\Debug\\\\" /Fd"cmTC_2b84e.dir\\Debug\\vc143.pdb" /external:W3 /TC /errorReport:queue "C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-rfgtm4\\src.c"
           src.c
-        D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-y9s7za\\src.c(1,10): error C1083: No se puede abrir el archivo incluir: 'pthread.h': No such file or directory [D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-y9s7za\\cmTC_d8d00.vcxproj]
-        Compilaci├│n del proyecto terminada "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-y9s7za\\cmTC_d8d00.vcxproj" (destinos predeterminados) -- ERROR.
+        C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-rfgtm4\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-rfgtm4\\cmTC_2b84e.vcxproj]
+        Compilaci├│n del proyecto terminada "C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-rfgtm4\\cmTC_2b84e.vcxproj" (destinos predeterminados) -- ERROR.
         
         ERROR al compilar.
         
-        "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-y9s7za\\cmTC_d8d00.vcxproj" (destino predeterminado) (1) ->
+        "C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-rfgtm4\\cmTC_2b84e.vcxproj" (destino predeterminado) (1) ->
         (ClCompile destino) -> 
-          D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-y9s7za\\src.c(1,10): error C1083: No se puede abrir el archivo incluir: 'pthread.h': No such file or directory [D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-y9s7za\\cmTC_d8d00.vcxproj]
+          C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-rfgtm4\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-rfgtm4\\cmTC_2b84e.vcxproj]
         
             0 Advertencia(s)
             1 Errores
         
-        Tiempo transcurrido 00:00:00.52
+        Tiempo transcurrido 00:00:00.36
         
       exitCode: 1
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CheckLibraryExists.cmake:112 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-4.0/Modules/FindThreads.cmake:112 (check_library_exists)"
-      - "C:/Program Files/CMake/share/cmake-4.0/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckLibraryExists.cmake:154 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:175 (check_library_exists)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:238 (_threads_check_lib)"
       - "build-msvc-x64/_deps/glfw-src/CMakeLists.txt:60 (find_package)"
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-ed6pmt"
-      binary: "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-ed6pmt"
+      source: "C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-e64n0t"
+      binary: "C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-e64n0t"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-src/CMake/modules"
+      CMAKE_MODULE_PATH: "C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glfw-src/CMake/modules"
     buildResult:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-ed6pmt'
+        Change Dir: 'C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-e64n0t'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a79e4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        Versi├│n de MSBuild 17.14.10+8b8e13593 para .NET Framework
-        Compilaci├│n iniciada a las 2/09/2025 9:47:46 p.┬ám..
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_92707.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Versi├│n de MSBuild 17.14.23+b0019275e para .NET Framework
+        Compilaci├│n iniciada a las 9/12/2025 2:31:09ÔÇ»p.ÔÇ»m..
         
-        Proyecto "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ed6pmt\\cmTC_a79e4.vcxproj" en nodo 1 (destinos predeterminados).
+        Proyecto "C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-e64n0t\\cmTC_92707.vcxproj" en nodo 1 (destinos predeterminados).
         PrepareForBuild:
-          Creando directorio "cmTC_a79e4.dir\\Debug\\".
-          La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
-          Creando directorio "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ed6pmt\\Debug\\".
-          Creando directorio "cmTC_a79e4.dir\\Debug\\cmTC_a79e4.tlog\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creando directorio "C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-e64n0t\\Debug\\".
+          Creando directorio "cmTC_92707.dir\\Debug\\cmTC_92707.tlog\\".
         InitializeBuildStatus:
-          Se crear├í "cmTC_a79e4.dir\\Debug\\cmTC_a79e4.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
-          Aplicando tarea Touch a "cmTC_a79e4.dir\\Debug\\cmTC_a79e4.tlog\\unsuccessfulbuild".
+          Se crear├í "cmTC_92707.dir\\Debug\\cmTC_92707.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_92707.dir\\Debug\\cmTC_92707.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a79e4.dir\\Debug\\\\" /Fd"cmTC_a79e4.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ed6pmt\\CheckFunctionExists.c"
-          Compilador de optimizaci├│n de C/C++ de Microsoft (R) versi├│n 19.44.35208 para x64
-          (C) Microsoft Corporation. Todos los derechos reservados.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a79e4.dir\\Debug\\\\" /Fd"cmTC_a79e4.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ed6pmt\\CheckFunctionExists.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_92707.dir\\Debug\\\\" /Fd"cmTC_92707.dir\\Debug\\vc143.pdb" /external:W3 /TC /errorReport:queue "C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-e64n0t\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35221 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_92707.dir\\Debug\\\\" /Fd"cmTC_92707.dir\\Debug\\vc143.pdb" /external:W3 /TC /errorReport:queue "C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-e64n0t\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ed6pmt\\Debug\\cmTC_a79e4.exe" /INCREMENTAL /ILK:"cmTC_a79e4.dir\\Debug\\cmTC_a79e4.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-ed6pmt/Debug/cmTC_a79e4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-ed6pmt/Debug/cmTC_a79e4.lib" /MACHINE:X64  /machine:x64 cmTC_a79e4.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: no se puede abrir el archivo 'pthreads.lib' [D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ed6pmt\\cmTC_a79e4.vcxproj]
-        Compilaci├│n del proyecto terminada "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ed6pmt\\cmTC_a79e4.vcxproj" (destinos predeterminados) -- ERROR.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-e64n0t\\Debug\\cmTC_92707.exe" /INCREMENTAL /ILK:"cmTC_92707.dir\\Debug\\cmTC_92707.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-e64n0t/Debug/cmTC_92707.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-e64n0t/Debug/cmTC_92707.lib" /MACHINE:X64  /machine:x64 cmTC_92707.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-e64n0t\\cmTC_92707.vcxproj]
+        Compilaci├│n del proyecto terminada "C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-e64n0t\\cmTC_92707.vcxproj" (destinos predeterminados) -- ERROR.
         
         ERROR al compilar.
         
-        "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ed6pmt\\cmTC_a79e4.vcxproj" (destino predeterminado) (1) ->
+        "C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-e64n0t\\cmTC_92707.vcxproj" (destino predeterminado) (1) ->
         (Link destino) -> 
-          LINK : fatal error LNK1104: no se puede abrir el archivo 'pthreads.lib' [D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-ed6pmt\\cmTC_a79e4.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-e64n0t\\cmTC_92707.vcxproj]
         
             0 Advertencia(s)
             1 Errores
         
-        Tiempo transcurrido 00:00:00.66
+        Tiempo transcurrido 00:00:00.47
         
       exitCode: 1
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CheckLibraryExists.cmake:112 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-4.0/Modules/FindThreads.cmake:112 (check_library_exists)"
-      - "C:/Program Files/CMake/share/cmake-4.0/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckLibraryExists.cmake:154 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:175 (check_library_exists)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:239 (_threads_check_lib)"
       - "build-msvc-x64/_deps/glfw-src/CMakeLists.txt:60 (find_package)"
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-yvx0to"
-      binary: "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-yvx0to"
+      source: "C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-d8etzf"
+      binary: "C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-d8etzf"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-src/CMake/modules"
+      CMAKE_MODULE_PATH: "C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glfw-src/CMake/modules"
     buildResult:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-yvx0to'
+        Change Dir: 'C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-d8etzf'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a1577.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        Versi├│n de MSBuild 17.14.10+8b8e13593 para .NET Framework
-        Compilaci├│n iniciada a las 2/09/2025 9:47:47 p.┬ám..
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_7ce69.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Versi├│n de MSBuild 17.14.23+b0019275e para .NET Framework
+        Compilaci├│n iniciada a las 9/12/2025 2:31:10ÔÇ»p.ÔÇ»m..
         
-        Proyecto "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-yvx0to\\cmTC_a1577.vcxproj" en nodo 1 (destinos predeterminados).
+        Proyecto "C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-d8etzf\\cmTC_7ce69.vcxproj" en nodo 1 (destinos predeterminados).
         PrepareForBuild:
-          Creando directorio "cmTC_a1577.dir\\Debug\\".
-          La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
-          Creando directorio "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-yvx0to\\Debug\\".
-          Creando directorio "cmTC_a1577.dir\\Debug\\cmTC_a1577.tlog\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creando directorio "C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-d8etzf\\Debug\\".
+          Creando directorio "cmTC_7ce69.dir\\Debug\\cmTC_7ce69.tlog\\".
         InitializeBuildStatus:
-          Se crear├í "cmTC_a1577.dir\\Debug\\cmTC_a1577.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
-          Aplicando tarea Touch a "cmTC_a1577.dir\\Debug\\cmTC_a1577.tlog\\unsuccessfulbuild".
+          Se crear├í "cmTC_7ce69.dir\\Debug\\cmTC_7ce69.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_7ce69.dir\\Debug\\cmTC_7ce69.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a1577.dir\\Debug\\\\" /Fd"cmTC_a1577.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-yvx0to\\CheckFunctionExists.c"
-          Compilador de optimizaci├│n de C/C++ de Microsoft (R) versi├│n 19.44.35208 para x64
-          (C) Microsoft Corporation. Todos los derechos reservados.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a1577.dir\\Debug\\\\" /Fd"cmTC_a1577.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-yvx0to\\CheckFunctionExists.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_7ce69.dir\\Debug\\\\" /Fd"cmTC_7ce69.dir\\Debug\\vc143.pdb" /external:W3 /TC /errorReport:queue "C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-d8etzf\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35221 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_7ce69.dir\\Debug\\\\" /Fd"cmTC_7ce69.dir\\Debug\\vc143.pdb" /external:W3 /TC /errorReport:queue "C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-d8etzf\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-yvx0to\\Debug\\cmTC_a1577.exe" /INCREMENTAL /ILK:"cmTC_a1577.dir\\Debug\\cmTC_a1577.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-yvx0to/Debug/cmTC_a1577.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-yvx0to/Debug/cmTC_a1577.lib" /MACHINE:X64  /machine:x64 cmTC_a1577.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: no se puede abrir el archivo 'pthread.lib' [D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-yvx0to\\cmTC_a1577.vcxproj]
-        Compilaci├│n del proyecto terminada "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-yvx0to\\cmTC_a1577.vcxproj" (destinos predeterminados) -- ERROR.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-d8etzf\\Debug\\cmTC_7ce69.exe" /INCREMENTAL /ILK:"cmTC_7ce69.dir\\Debug\\cmTC_7ce69.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-d8etzf/Debug/cmTC_7ce69.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/CMakeFiles/CMakeScratch/TryCompile-d8etzf/Debug/cmTC_7ce69.lib" /MACHINE:X64  /machine:x64 cmTC_7ce69.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-d8etzf\\cmTC_7ce69.vcxproj]
+        Compilaci├│n del proyecto terminada "C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-d8etzf\\cmTC_7ce69.vcxproj" (destinos predeterminados) -- ERROR.
         
         ERROR al compilar.
         
-        "D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-yvx0to\\cmTC_a1577.vcxproj" (destino predeterminado) (1) ->
+        "C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-d8etzf\\cmTC_7ce69.vcxproj" (destino predeterminado) (1) ->
         (Link destino) -> 
-          LINK : fatal error LNK1104: no se puede abrir el archivo 'pthread.lib' [D:\\EVIROMENT\\Oxide\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-yvx0to\\cmTC_a1577.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\EVIROMENT\\M\\Oxides\\OxideEngine\\build-msvc-x64\\CMakeFiles\\CMakeScratch\\TryCompile-d8etzf\\cmTC_7ce69.vcxproj]
         
             0 Advertencia(s)
             1 Errores
         
-        Tiempo transcurrido 00:00:00.68
+        Tiempo transcurrido 00:00:00.47
         
       exitCode: 1
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindDoxygen.cmake:770 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindDoxygen.cmake:955 (_Doxygen_find_doxygen)"
+      - "build-msvc-x64/_deps/glfw-src/docs/CMakeLists.txt:35 (find_package)"
+    mode: "program"
+    variable: "DOXYGEN_EXECUTABLE"
+    description: "Doxygen documentation generation tool (https://www.doxygen.nl)"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "doxygen"
+    candidate_directories:
+      - "C:/Program Files/PowerShell/7/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/EF14D/AppData/Local/nvm/"
+      - "C:/nvm4w/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files (x86)/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/180/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/170/DTS/Binn/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files (x86)/IncrediBuild/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Users/YA10F/.cargo/bin/"
+      - "C:/Users/YA10F/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/YA10F/AppData/Local/Programs/Kiro/bin/"
+      - "C:/Users/YA10F/.dotnet/tools/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files/MarioEngine/bin/"
+      - "C:/Program Files/MarioEngine/sbin/"
+      - "C:/Program Files/MarioEngine/"
+      - "/REGISTRY-NOTFOUND/bin/"
+      - "/Applications/Doxygen.app/Contents/Resources/"
+      - "/Applications/Doxygen.app/Contents/MacOS/"
+      - "/Applications/Utilities/Doxygen.app/Contents/Resources/"
+      - "/Applications/Utilities/Doxygen.app/Contents/MacOS/"
+    searched_directories:
+      - "C:/Program Files/PowerShell/7/doxygen.com"
+      - "C:/Program Files/PowerShell/7/doxygen.exe"
+      - "C:/Program Files/PowerShell/7/doxygen"
+      - "C:/Windows/System32/doxygen.com"
+      - "C:/Windows/System32/doxygen.exe"
+      - "C:/Windows/System32/doxygen"
+      - "C:/Windows/doxygen.com"
+      - "C:/Windows/doxygen.exe"
+      - "C:/Windows/doxygen"
+      - "C:/Windows/System32/wbem/doxygen.com"
+      - "C:/Windows/System32/wbem/doxygen.exe"
+      - "C:/Windows/System32/wbem/doxygen"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/doxygen.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/doxygen.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/doxygen"
+      - "C:/Windows/System32/OpenSSH/doxygen.com"
+      - "C:/Windows/System32/OpenSSH/doxygen.exe"
+      - "C:/Windows/System32/OpenSSH/doxygen"
+      - "C:/Program Files/dotnet/doxygen.com"
+      - "C:/Program Files/dotnet/doxygen.exe"
+      - "C:/Program Files/dotnet/doxygen"
+      - "C:/Users/EF14D/AppData/Local/nvm/doxygen.com"
+      - "C:/Users/EF14D/AppData/Local/nvm/doxygen.exe"
+      - "C:/Users/EF14D/AppData/Local/nvm/doxygen"
+      - "C:/nvm4w/nodejs/doxygen.com"
+      - "C:/nvm4w/nodejs/doxygen.exe"
+      - "C:/nvm4w/nodejs/doxygen"
+      - "C:/Program Files/Git/cmd/doxygen.com"
+      - "C:/Program Files/Git/cmd/doxygen.exe"
+      - "C:/Program Files/Git/cmd/doxygen"
+      - "C:/Program Files (x86)/Microsoft SQL Server/170/Tools/Binn/doxygen.com"
+      - "C:/Program Files (x86)/Microsoft SQL Server/170/Tools/Binn/doxygen.exe"
+      - "C:/Program Files (x86)/Microsoft SQL Server/170/Tools/Binn/doxygen"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/doxygen.com"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/doxygen.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/doxygen"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/180/Tools/Binn/doxygen.com"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/180/Tools/Binn/doxygen.exe"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/180/Tools/Binn/doxygen"
+      - "C:/Program Files/Microsoft SQL Server/170/DTS/Binn/doxygen.com"
+      - "C:/Program Files/Microsoft SQL Server/170/DTS/Binn/doxygen.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/DTS/Binn/doxygen"
+      - "C:/Program Files/Docker/Docker/resources/bin/doxygen.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/doxygen.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/doxygen"
+      - "C:/Program Files/CMake/bin/doxygen.com"
+      - "C:/Program Files/CMake/bin/doxygen.exe"
+      - "C:/Program Files/CMake/bin/doxygen"
+      - "C:/ProgramData/chocolatey/bin/doxygen.com"
+      - "C:/ProgramData/chocolatey/bin/doxygen.exe"
+      - "C:/ProgramData/chocolatey/bin/doxygen"
+      - "C:/Program Files (x86)/IncrediBuild/doxygen.com"
+      - "C:/Program Files (x86)/IncrediBuild/doxygen.exe"
+      - "C:/Program Files (x86)/IncrediBuild/doxygen"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/doxygen.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/doxygen.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/doxygen"
+      - "C:/Users/YA10F/.cargo/bin/doxygen.com"
+      - "C:/Users/YA10F/.cargo/bin/doxygen.exe"
+      - "C:/Users/YA10F/.cargo/bin/doxygen"
+      - "C:/Users/YA10F/AppData/Local/Microsoft/WindowsApps/doxygen.com"
+      - "C:/Users/YA10F/AppData/Local/Microsoft/WindowsApps/doxygen.exe"
+      - "C:/Users/YA10F/AppData/Local/Microsoft/WindowsApps/doxygen"
+      - "C:/Users/YA10F/AppData/Local/Programs/Kiro/bin/doxygen.com"
+      - "C:/Users/YA10F/AppData/Local/Programs/Kiro/bin/doxygen.exe"
+      - "C:/Users/YA10F/AppData/Local/Programs/Kiro/bin/doxygen"
+      - "C:/Users/YA10F/.dotnet/tools/doxygen.com"
+      - "C:/Users/YA10F/.dotnet/tools/doxygen.exe"
+      - "C:/Users/YA10F/.dotnet/tools/doxygen"
+      - "C:/Program Files/bin/doxygen.com"
+      - "C:/Program Files/bin/doxygen.exe"
+      - "C:/Program Files/bin/doxygen"
+      - "C:/Program Files/sbin/doxygen.com"
+      - "C:/Program Files/sbin/doxygen.exe"
+      - "C:/Program Files/sbin/doxygen"
+      - "C:/Program Files/doxygen.com"
+      - "C:/Program Files/doxygen.exe"
+      - "C:/Program Files/doxygen"
+      - "C:/Program Files (x86)/bin/doxygen.com"
+      - "C:/Program Files (x86)/bin/doxygen.exe"
+      - "C:/Program Files (x86)/bin/doxygen"
+      - "C:/Program Files (x86)/sbin/doxygen.com"
+      - "C:/Program Files (x86)/sbin/doxygen.exe"
+      - "C:/Program Files (x86)/sbin/doxygen"
+      - "C:/Program Files (x86)/doxygen.com"
+      - "C:/Program Files (x86)/doxygen.exe"
+      - "C:/Program Files (x86)/doxygen"
+      - "C:/Program Files/CMake/bin/doxygen.com"
+      - "C:/Program Files/CMake/bin/doxygen.exe"
+      - "C:/Program Files/CMake/bin/doxygen"
+      - "C:/Program Files/CMake/sbin/doxygen.com"
+      - "C:/Program Files/CMake/sbin/doxygen.exe"
+      - "C:/Program Files/CMake/sbin/doxygen"
+      - "C:/Program Files/CMake/doxygen.com"
+      - "C:/Program Files/CMake/doxygen.exe"
+      - "C:/Program Files/CMake/doxygen"
+      - "C:/Program Files/MarioEngine/bin/doxygen.com"
+      - "C:/Program Files/MarioEngine/bin/doxygen.exe"
+      - "C:/Program Files/MarioEngine/bin/doxygen"
+      - "C:/Program Files/MarioEngine/sbin/doxygen.com"
+      - "C:/Program Files/MarioEngine/sbin/doxygen.exe"
+      - "C:/Program Files/MarioEngine/sbin/doxygen"
+      - "C:/Program Files/MarioEngine/doxygen.com"
+      - "C:/Program Files/MarioEngine/doxygen.exe"
+      - "C:/Program Files/MarioEngine/doxygen"
+      - "/REGISTRY-NOTFOUND/bin/doxygen.com"
+      - "/REGISTRY-NOTFOUND/bin/doxygen.exe"
+      - "/REGISTRY-NOTFOUND/bin/doxygen"
+      - "/Applications/Doxygen.app/Contents/Resources/doxygen.com"
+      - "/Applications/Doxygen.app/Contents/Resources/doxygen.exe"
+      - "/Applications/Doxygen.app/Contents/Resources/doxygen"
+      - "/Applications/Doxygen.app/Contents/MacOS/doxygen.com"
+      - "/Applications/Doxygen.app/Contents/MacOS/doxygen.exe"
+      - "/Applications/Doxygen.app/Contents/MacOS/doxygen"
+      - "/Applications/Utilities/Doxygen.app/Contents/Resources/doxygen.com"
+      - "/Applications/Utilities/Doxygen.app/Contents/Resources/doxygen.exe"
+      - "/Applications/Utilities/Doxygen.app/Contents/Resources/doxygen"
+      - "/Applications/Utilities/Doxygen.app/Contents/MacOS/doxygen.com"
+      - "/Applications/Utilities/Doxygen.app/Contents/MacOS/doxygen.exe"
+      - "/Applications/Utilities/Doxygen.app/Contents/MacOS/doxygen"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\PowerShell\\7"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\EF14D\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files (x86)\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\180\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\DTS\\Binn\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files (x86)\\IncrediBuild"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\YA10F\\.cargo\\bin"
+        - "C:\\Users\\YA10F\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\YA10F\\AppData\\Local\\Programs\\Kiro\\bin"
+        - "C:\\Users\\YA10F\\.dotnet\\tools"
+        - "C:\\Users\\EF14D\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\CMake\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files/MarioEngine"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files/MarioEngine"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindPython/Support.cmake:2180 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindPython.cmake:721 (include)"
+      - "build-msvc-x64/_deps/glad-src/CMakeLists.txt:32 (find_package)"
+    mode: "program"
+    variable: "_Python_EXECUTABLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "python3.15"
+      - "python3"
+      - "python"
+      - "ipy3.15"
+      - "ipy3"
+      - "ipy64"
+      - "ipy32"
+      - "ipy"
+      - "ipy.exe"
+    candidate_directories:
+      - "/REGISTRY-NOTFOUND/bin/"
+      - "/REGISTRY-NOTFOUND/Scripts/"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.15/"
+      - "/REGISTRY-NOTFOUND/net45/"
+      - "/REGISTRY-NOTFOUND/net40/"
+      - "/REGISTRY-NOTFOUND/"
+    searched_directories:
+      - "/REGISTRY-NOTFOUND/bin/python3.15.com"
+      - "/REGISTRY-NOTFOUND/bin/python3.15.exe"
+      - "/REGISTRY-NOTFOUND/bin/python3.15"
+      - "/REGISTRY-NOTFOUND/bin/python3.com"
+      - "/REGISTRY-NOTFOUND/bin/python3.exe"
+      - "/REGISTRY-NOTFOUND/bin/python3"
+      - "/REGISTRY-NOTFOUND/bin/python.com"
+      - "/REGISTRY-NOTFOUND/bin/python.exe"
+      - "/REGISTRY-NOTFOUND/bin/python"
+      - "/REGISTRY-NOTFOUND/bin/ipy3.15.com"
+      - "/REGISTRY-NOTFOUND/bin/ipy3.15.exe"
+      - "/REGISTRY-NOTFOUND/bin/ipy3.15"
+      - "/REGISTRY-NOTFOUND/bin/ipy3.com"
+      - "/REGISTRY-NOTFOUND/bin/ipy3.exe"
+      - "/REGISTRY-NOTFOUND/bin/ipy3"
+      - "/REGISTRY-NOTFOUND/bin/ipy64.com"
+      - "/REGISTRY-NOTFOUND/bin/ipy64.exe"
+      - "/REGISTRY-NOTFOUND/bin/ipy64"
+      - "/REGISTRY-NOTFOUND/bin/ipy32.com"
+      - "/REGISTRY-NOTFOUND/bin/ipy32.exe"
+      - "/REGISTRY-NOTFOUND/bin/ipy32"
+      - "/REGISTRY-NOTFOUND/bin/ipy.com"
+      - "/REGISTRY-NOTFOUND/bin/ipy.exe"
+      - "/REGISTRY-NOTFOUND/bin/ipy"
+      - "/REGISTRY-NOTFOUND/bin/ipy.exe.com"
+      - "/REGISTRY-NOTFOUND/bin/ipy.exe"
+      - "/REGISTRY-NOTFOUND/Scripts/python3.15.com"
+      - "/REGISTRY-NOTFOUND/Scripts/python3.15.exe"
+      - "/REGISTRY-NOTFOUND/Scripts/python3.15"
+      - "/REGISTRY-NOTFOUND/Scripts/python3.com"
+      - "/REGISTRY-NOTFOUND/Scripts/python3.exe"
+      - "/REGISTRY-NOTFOUND/Scripts/python3"
+      - "/REGISTRY-NOTFOUND/Scripts/python.com"
+      - "/REGISTRY-NOTFOUND/Scripts/python.exe"
+      - "/REGISTRY-NOTFOUND/Scripts/python"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy3.15.com"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy3.15.exe"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy3.15"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy3.com"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy3.exe"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy3"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy64.com"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy64.exe"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy64"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy32.com"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy32.exe"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy32"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy.com"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy.exe"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy.exe.com"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy.exe"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.15/python3.15.com"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.15/python3.15.exe"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.15/python3.15"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.15/python3.com"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.15/python3.exe"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.15/python3"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.15/python.com"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.15/python.exe"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.15/python"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.15/ipy3.15.com"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.15/ipy3.15.exe"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.15/ipy3.15"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.15/ipy3.com"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.15/ipy3.exe"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.15/ipy3"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.15/ipy64.com"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.15/ipy64.exe"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.15/ipy64"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.15/ipy32.com"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.15/ipy32.exe"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.15/ipy32"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.15/ipy.com"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.15/ipy.exe"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.15/ipy"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.15/ipy.exe.com"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.15/ipy.exe"
+      - "/REGISTRY-NOTFOUND/net45/python3.15.com"
+      - "/REGISTRY-NOTFOUND/net45/python3.15.exe"
+      - "/REGISTRY-NOTFOUND/net45/python3.15"
+      - "/REGISTRY-NOTFOUND/net45/python3.com"
+      - "/REGISTRY-NOTFOUND/net45/python3.exe"
+      - "/REGISTRY-NOTFOUND/net45/python3"
+      - "/REGISTRY-NOTFOUND/net45/python.com"
+      - "/REGISTRY-NOTFOUND/net45/python.exe"
+      - "/REGISTRY-NOTFOUND/net45/python"
+      - "/REGISTRY-NOTFOUND/net45/ipy3.15.com"
+      - "/REGISTRY-NOTFOUND/net45/ipy3.15.exe"
+      - "/REGISTRY-NOTFOUND/net45/ipy3.15"
+      - "/REGISTRY-NOTFOUND/net45/ipy3.com"
+      - "/REGISTRY-NOTFOUND/net45/ipy3.exe"
+      - "/REGISTRY-NOTFOUND/net45/ipy3"
+      - "/REGISTRY-NOTFOUND/net45/ipy64.com"
+      - "/REGISTRY-NOTFOUND/net45/ipy64.exe"
+      - "/REGISTRY-NOTFOUND/net45/ipy64"
+      - "/REGISTRY-NOTFOUND/net45/ipy32.com"
+      - "/REGISTRY-NOTFOUND/net45/ipy32.exe"
+      - "/REGISTRY-NOTFOUND/net45/ipy32"
+      - "/REGISTRY-NOTFOUND/net45/ipy.com"
+      - "/REGISTRY-NOTFOUND/net45/ipy.exe"
+      - "/REGISTRY-NOTFOUND/net45/ipy"
+      - "/REGISTRY-NOTFOUND/net45/ipy.exe.com"
+      - "/REGISTRY-NOTFOUND/net45/ipy.exe"
+      - "/REGISTRY-NOTFOUND/net40/python3.15.com"
+      - "/REGISTRY-NOTFOUND/net40/python3.15.exe"
+      - "/REGISTRY-NOTFOUND/net40/python3.15"
+      - "/REGISTRY-NOTFOUND/net40/python3.com"
+      - "/REGISTRY-NOTFOUND/net40/python3.exe"
+      - "/REGISTRY-NOTFOUND/net40/python3"
+      - "/REGISTRY-NOTFOUND/net40/python.com"
+      - "/REGISTRY-NOTFOUND/net40/python.exe"
+      - "/REGISTRY-NOTFOUND/net40/python"
+      - "/REGISTRY-NOTFOUND/net40/ipy3.15.com"
+      - "/REGISTRY-NOTFOUND/net40/ipy3.15.exe"
+      - "/REGISTRY-NOTFOUND/net40/ipy3.15"
+      - "/REGISTRY-NOTFOUND/net40/ipy3.com"
+      - "/REGISTRY-NOTFOUND/net40/ipy3.exe"
+      - "/REGISTRY-NOTFOUND/net40/ipy3"
+      - "/REGISTRY-NOTFOUND/net40/ipy64.com"
+      - "/REGISTRY-NOTFOUND/net40/ipy64.exe"
+      - "/REGISTRY-NOTFOUND/net40/ipy64"
+      - "/REGISTRY-NOTFOUND/net40/ipy32.com"
+      - "/REGISTRY-NOTFOUND/net40/ipy32.exe"
+      - "/REGISTRY-NOTFOUND/net40/ipy32"
+      - "/REGISTRY-NOTFOUND/net40/ipy.com"
+      - "/REGISTRY-NOTFOUND/net40/ipy.exe"
+      - "/REGISTRY-NOTFOUND/net40/ipy"
+      - "/REGISTRY-NOTFOUND/net40/ipy.exe.com"
+      - "/REGISTRY-NOTFOUND/net40/ipy.exe"
+      - "/REGISTRY-NOTFOUND/python3.15.com"
+      - "/REGISTRY-NOTFOUND/python3.15.exe"
+      - "/REGISTRY-NOTFOUND/python3.15"
+      - "/REGISTRY-NOTFOUND/python3.com"
+      - "/REGISTRY-NOTFOUND/python3.exe"
+      - "/REGISTRY-NOTFOUND/python3"
+      - "/REGISTRY-NOTFOUND/python.com"
+      - "/REGISTRY-NOTFOUND/python.exe"
+      - "/REGISTRY-NOTFOUND/python"
+      - "/REGISTRY-NOTFOUND/ipy3.15.com"
+      - "/REGISTRY-NOTFOUND/ipy3.15.exe"
+      - "/REGISTRY-NOTFOUND/ipy3.15"
+      - "/REGISTRY-NOTFOUND/ipy3.com"
+      - "/REGISTRY-NOTFOUND/ipy3.exe"
+      - "/REGISTRY-NOTFOUND/ipy3"
+      - "/REGISTRY-NOTFOUND/ipy64.com"
+      - "/REGISTRY-NOTFOUND/ipy64.exe"
+      - "/REGISTRY-NOTFOUND/ipy64"
+      - "/REGISTRY-NOTFOUND/ipy32.com"
+      - "/REGISTRY-NOTFOUND/ipy32.exe"
+      - "/REGISTRY-NOTFOUND/ipy32"
+      - "/REGISTRY-NOTFOUND/ipy.com"
+      - "/REGISTRY-NOTFOUND/ipy.exe"
+      - "/REGISTRY-NOTFOUND/ipy"
+      - "/REGISTRY-NOTFOUND/ipy.exe.com"
+      - "/REGISTRY-NOTFOUND/ipy.exe"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\PowerShell\\7"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\EF14D\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files (x86)\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\180\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\DTS\\Binn\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files (x86)\\IncrediBuild"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\YA10F\\.cargo\\bin"
+        - "C:\\Users\\YA10F\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\YA10F\\AppData\\Local\\Programs\\Kiro\\bin"
+        - "C:\\Users\\YA10F\\.dotnet\\tools"
+        - "C:\\Users\\EF14D\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\CMake\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files/MarioEngine"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files/MarioEngine"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindPython/Support.cmake:2180 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindPython.cmake:721 (include)"
+      - "build-msvc-x64/_deps/glad-src/CMakeLists.txt:32 (find_package)"
+    mode: "program"
+    variable: "_Python_EXECUTABLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "python3.14"
+      - "python3"
+      - "python"
+      - "ipy3.14"
+      - "ipy3"
+      - "ipy64"
+      - "ipy32"
+      - "ipy"
+      - "ipy.exe"
+    candidate_directories:
+      - "/REGISTRY-NOTFOUND/bin/"
+      - "/REGISTRY-NOTFOUND/Scripts/"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.14/"
+      - "/REGISTRY-NOTFOUND/net45/"
+      - "/REGISTRY-NOTFOUND/net40/"
+      - "/REGISTRY-NOTFOUND/"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/bin/"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/Scripts/"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/share/ironpython3.14/"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net45/"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net40/"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/"
+    searched_directories:
+      - "/REGISTRY-NOTFOUND/bin/python3.14.com"
+      - "/REGISTRY-NOTFOUND/bin/python3.14.exe"
+      - "/REGISTRY-NOTFOUND/bin/python3.14"
+      - "/REGISTRY-NOTFOUND/bin/python3.com"
+      - "/REGISTRY-NOTFOUND/bin/python3.exe"
+      - "/REGISTRY-NOTFOUND/bin/python3"
+      - "/REGISTRY-NOTFOUND/bin/python.com"
+      - "/REGISTRY-NOTFOUND/bin/python.exe"
+      - "/REGISTRY-NOTFOUND/bin/python"
+      - "/REGISTRY-NOTFOUND/bin/ipy3.14.com"
+      - "/REGISTRY-NOTFOUND/bin/ipy3.14.exe"
+      - "/REGISTRY-NOTFOUND/bin/ipy3.14"
+      - "/REGISTRY-NOTFOUND/bin/ipy3.com"
+      - "/REGISTRY-NOTFOUND/bin/ipy3.exe"
+      - "/REGISTRY-NOTFOUND/bin/ipy3"
+      - "/REGISTRY-NOTFOUND/bin/ipy64.com"
+      - "/REGISTRY-NOTFOUND/bin/ipy64.exe"
+      - "/REGISTRY-NOTFOUND/bin/ipy64"
+      - "/REGISTRY-NOTFOUND/bin/ipy32.com"
+      - "/REGISTRY-NOTFOUND/bin/ipy32.exe"
+      - "/REGISTRY-NOTFOUND/bin/ipy32"
+      - "/REGISTRY-NOTFOUND/bin/ipy.com"
+      - "/REGISTRY-NOTFOUND/bin/ipy.exe"
+      - "/REGISTRY-NOTFOUND/bin/ipy"
+      - "/REGISTRY-NOTFOUND/bin/ipy.exe.com"
+      - "/REGISTRY-NOTFOUND/bin/ipy.exe"
+      - "/REGISTRY-NOTFOUND/Scripts/python3.14.com"
+      - "/REGISTRY-NOTFOUND/Scripts/python3.14.exe"
+      - "/REGISTRY-NOTFOUND/Scripts/python3.14"
+      - "/REGISTRY-NOTFOUND/Scripts/python3.com"
+      - "/REGISTRY-NOTFOUND/Scripts/python3.exe"
+      - "/REGISTRY-NOTFOUND/Scripts/python3"
+      - "/REGISTRY-NOTFOUND/Scripts/python.com"
+      - "/REGISTRY-NOTFOUND/Scripts/python.exe"
+      - "/REGISTRY-NOTFOUND/Scripts/python"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy3.14.com"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy3.14.exe"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy3.14"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy3.com"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy3.exe"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy3"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy64.com"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy64.exe"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy64"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy32.com"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy32.exe"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy32"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy.com"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy.exe"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy.exe.com"
+      - "/REGISTRY-NOTFOUND/Scripts/ipy.exe"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.14/python3.14.com"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.14/python3.14.exe"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.14/python3.14"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.14/python3.com"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.14/python3.exe"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.14/python3"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.14/python.com"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.14/python.exe"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.14/python"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.14/ipy3.14.com"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.14/ipy3.14.exe"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.14/ipy3.14"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.14/ipy3.com"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.14/ipy3.exe"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.14/ipy3"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.14/ipy64.com"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.14/ipy64.exe"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.14/ipy64"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.14/ipy32.com"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.14/ipy32.exe"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.14/ipy32"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.14/ipy.com"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.14/ipy.exe"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.14/ipy"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.14/ipy.exe.com"
+      - "/REGISTRY-NOTFOUND/share/ironpython3.14/ipy.exe"
+      - "/REGISTRY-NOTFOUND/net45/python3.14.com"
+      - "/REGISTRY-NOTFOUND/net45/python3.14.exe"
+      - "/REGISTRY-NOTFOUND/net45/python3.14"
+      - "/REGISTRY-NOTFOUND/net45/python3.com"
+      - "/REGISTRY-NOTFOUND/net45/python3.exe"
+      - "/REGISTRY-NOTFOUND/net45/python3"
+      - "/REGISTRY-NOTFOUND/net45/python.com"
+      - "/REGISTRY-NOTFOUND/net45/python.exe"
+      - "/REGISTRY-NOTFOUND/net45/python"
+      - "/REGISTRY-NOTFOUND/net45/ipy3.14.com"
+      - "/REGISTRY-NOTFOUND/net45/ipy3.14.exe"
+      - "/REGISTRY-NOTFOUND/net45/ipy3.14"
+      - "/REGISTRY-NOTFOUND/net45/ipy3.com"
+      - "/REGISTRY-NOTFOUND/net45/ipy3.exe"
+      - "/REGISTRY-NOTFOUND/net45/ipy3"
+      - "/REGISTRY-NOTFOUND/net45/ipy64.com"
+      - "/REGISTRY-NOTFOUND/net45/ipy64.exe"
+      - "/REGISTRY-NOTFOUND/net45/ipy64"
+      - "/REGISTRY-NOTFOUND/net45/ipy32.com"
+      - "/REGISTRY-NOTFOUND/net45/ipy32.exe"
+      - "/REGISTRY-NOTFOUND/net45/ipy32"
+      - "/REGISTRY-NOTFOUND/net45/ipy.com"
+      - "/REGISTRY-NOTFOUND/net45/ipy.exe"
+      - "/REGISTRY-NOTFOUND/net45/ipy"
+      - "/REGISTRY-NOTFOUND/net45/ipy.exe.com"
+      - "/REGISTRY-NOTFOUND/net45/ipy.exe"
+      - "/REGISTRY-NOTFOUND/net40/python3.14.com"
+      - "/REGISTRY-NOTFOUND/net40/python3.14.exe"
+      - "/REGISTRY-NOTFOUND/net40/python3.14"
+      - "/REGISTRY-NOTFOUND/net40/python3.com"
+      - "/REGISTRY-NOTFOUND/net40/python3.exe"
+      - "/REGISTRY-NOTFOUND/net40/python3"
+      - "/REGISTRY-NOTFOUND/net40/python.com"
+      - "/REGISTRY-NOTFOUND/net40/python.exe"
+      - "/REGISTRY-NOTFOUND/net40/python"
+      - "/REGISTRY-NOTFOUND/net40/ipy3.14.com"
+      - "/REGISTRY-NOTFOUND/net40/ipy3.14.exe"
+      - "/REGISTRY-NOTFOUND/net40/ipy3.14"
+      - "/REGISTRY-NOTFOUND/net40/ipy3.com"
+      - "/REGISTRY-NOTFOUND/net40/ipy3.exe"
+      - "/REGISTRY-NOTFOUND/net40/ipy3"
+      - "/REGISTRY-NOTFOUND/net40/ipy64.com"
+      - "/REGISTRY-NOTFOUND/net40/ipy64.exe"
+      - "/REGISTRY-NOTFOUND/net40/ipy64"
+      - "/REGISTRY-NOTFOUND/net40/ipy32.com"
+      - "/REGISTRY-NOTFOUND/net40/ipy32.exe"
+      - "/REGISTRY-NOTFOUND/net40/ipy32"
+      - "/REGISTRY-NOTFOUND/net40/ipy.com"
+      - "/REGISTRY-NOTFOUND/net40/ipy.exe"
+      - "/REGISTRY-NOTFOUND/net40/ipy"
+      - "/REGISTRY-NOTFOUND/net40/ipy.exe.com"
+      - "/REGISTRY-NOTFOUND/net40/ipy.exe"
+      - "/REGISTRY-NOTFOUND/python3.14.com"
+      - "/REGISTRY-NOTFOUND/python3.14.exe"
+      - "/REGISTRY-NOTFOUND/python3.14"
+      - "/REGISTRY-NOTFOUND/python3.com"
+      - "/REGISTRY-NOTFOUND/python3.exe"
+      - "/REGISTRY-NOTFOUND/python3"
+      - "/REGISTRY-NOTFOUND/python.com"
+      - "/REGISTRY-NOTFOUND/python.exe"
+      - "/REGISTRY-NOTFOUND/python"
+      - "/REGISTRY-NOTFOUND/ipy3.14.com"
+      - "/REGISTRY-NOTFOUND/ipy3.14.exe"
+      - "/REGISTRY-NOTFOUND/ipy3.14"
+      - "/REGISTRY-NOTFOUND/ipy3.com"
+      - "/REGISTRY-NOTFOUND/ipy3.exe"
+      - "/REGISTRY-NOTFOUND/ipy3"
+      - "/REGISTRY-NOTFOUND/ipy64.com"
+      - "/REGISTRY-NOTFOUND/ipy64.exe"
+      - "/REGISTRY-NOTFOUND/ipy64"
+      - "/REGISTRY-NOTFOUND/ipy32.com"
+      - "/REGISTRY-NOTFOUND/ipy32.exe"
+      - "/REGISTRY-NOTFOUND/ipy32"
+      - "/REGISTRY-NOTFOUND/ipy.com"
+      - "/REGISTRY-NOTFOUND/ipy.exe"
+      - "/REGISTRY-NOTFOUND/ipy"
+      - "/REGISTRY-NOTFOUND/ipy.exe.com"
+      - "/REGISTRY-NOTFOUND/ipy.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/bin/python3.14.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/bin/python3.14.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/bin/python3.14"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/bin/python3.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/bin/python3.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/bin/python3"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/bin/python.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/bin/python.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/bin/python"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/bin/ipy3.14.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/bin/ipy3.14.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/bin/ipy3.14"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/bin/ipy3.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/bin/ipy3.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/bin/ipy3"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/bin/ipy64.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/bin/ipy64.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/bin/ipy64"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/bin/ipy32.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/bin/ipy32.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/bin/ipy32"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/bin/ipy.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/bin/ipy.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/bin/ipy"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/bin/ipy.exe.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/bin/ipy.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/Scripts/python3.14.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/Scripts/python3.14.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/Scripts/python3.14"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/Scripts/python3.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/Scripts/python3.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/Scripts/python3"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/Scripts/python.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/Scripts/python.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/Scripts/python"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/Scripts/ipy3.14.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/Scripts/ipy3.14.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/Scripts/ipy3.14"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/Scripts/ipy3.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/Scripts/ipy3.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/Scripts/ipy3"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/Scripts/ipy64.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/Scripts/ipy64.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/Scripts/ipy64"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/Scripts/ipy32.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/Scripts/ipy32.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/Scripts/ipy32"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/Scripts/ipy.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/Scripts/ipy.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/Scripts/ipy"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/Scripts/ipy.exe.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/Scripts/ipy.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/share/ironpython3.14/python3.14.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/share/ironpython3.14/python3.14.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/share/ironpython3.14/python3.14"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/share/ironpython3.14/python3.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/share/ironpython3.14/python3.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/share/ironpython3.14/python3"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/share/ironpython3.14/python.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/share/ironpython3.14/python.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/share/ironpython3.14/python"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/share/ironpython3.14/ipy3.14.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/share/ironpython3.14/ipy3.14.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/share/ironpython3.14/ipy3.14"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/share/ironpython3.14/ipy3.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/share/ironpython3.14/ipy3.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/share/ironpython3.14/ipy3"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/share/ironpython3.14/ipy64.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/share/ironpython3.14/ipy64.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/share/ironpython3.14/ipy64"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/share/ironpython3.14/ipy32.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/share/ironpython3.14/ipy32.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/share/ironpython3.14/ipy32"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/share/ironpython3.14/ipy.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/share/ironpython3.14/ipy.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/share/ironpython3.14/ipy"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/share/ironpython3.14/ipy.exe.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/share/ironpython3.14/ipy.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net45/python3.14.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net45/python3.14.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net45/python3.14"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net45/python3.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net45/python3.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net45/python3"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net45/python.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net45/python.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net45/python"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net45/ipy3.14.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net45/ipy3.14.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net45/ipy3.14"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net45/ipy3.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net45/ipy3.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net45/ipy3"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net45/ipy64.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net45/ipy64.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net45/ipy64"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net45/ipy32.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net45/ipy32.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net45/ipy32"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net45/ipy.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net45/ipy.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net45/ipy"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net45/ipy.exe.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net45/ipy.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net40/python3.14.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net40/python3.14.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net40/python3.14"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net40/python3.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net40/python3.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net40/python3"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net40/python.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net40/python.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net40/python"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net40/ipy3.14.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net40/ipy3.14.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net40/ipy3.14"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net40/ipy3.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net40/ipy3.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net40/ipy3"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net40/ipy64.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net40/ipy64.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net40/ipy64"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net40/ipy32.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net40/ipy32.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net40/ipy32"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net40/ipy.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net40/ipy.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net40/ipy"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net40/ipy.exe.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/net40/ipy.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/python3.14.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/python3.14.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/python3.14"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/python3.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/python3.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/python3"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/python.com"
+    found: "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/python.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\PowerShell\\7"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\EF14D\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files (x86)\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\180\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\DTS\\Binn\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files (x86)\\IncrediBuild"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\YA10F\\.cargo\\bin"
+        - "C:\\Users\\YA10F\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\YA10F\\AppData\\Local\\Programs\\Kiro\\bin"
+        - "C:\\Users\\YA10F\\.dotnet\\tools"
+        - "C:\\Users\\EF14D\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\CMake\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files/MarioEngine"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files/MarioEngine"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindPython/Support.cmake:2437 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindPython.cmake:721 (include)"
+      - "build-msvc-x64/_deps/glad-src/CMakeLists.txt:32 (find_package)"
+    mode: "program"
+    variable: "_Python_EXECUTABLE_DEBUG"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "python3.14_d"
+      - "python3_d"
+      - "python_d"
+    candidate_directories:
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/"
+    searched_directories:
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/python3.14_d.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/python3.14_d.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/python3.14_d"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/python3_d.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/python3_d.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/python3_d"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/python_d.com"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/python_d.exe"
+      - "C:/Users/YA10F/AppData/Local/Python/pythoncore-3.14-64/python_d"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\PowerShell\\7"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\EF14D\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files (x86)\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\180\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\DTS\\Binn\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files (x86)\\IncrediBuild"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\YA10F\\.cargo\\bin"
+        - "C:\\Users\\YA10F\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\YA10F\\AppData\\Local\\Programs\\Kiro\\bin"
+        - "C:\\Users\\YA10F\\.dotnet\\tools"
+        - "C:\\Users\\EF14D\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\CMake\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files/MarioEngine"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files/MarioEngine"
 ...

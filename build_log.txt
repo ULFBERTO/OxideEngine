@@ -1,0 +1,7 @@
+Versi├│n de MSBuild 17.14.23+b0019275e para .NET Framework
+
+  Generating GLAD
+  "_Python_EXECUTABLE-NOTFOUND" no se reconoce como un comando interno o externo,
+  programa o archivo por lotes ejecutable.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(254,5): error MSB8066: Custom build for 'C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\CMakeFiles\c0409204010348fd4d292942730874de\glad.h.rule;C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\CMakeFiles\6ac3dd636794cef18bdb1d6b074377e3\glad-generate-files.rule' exited with code 9009. [C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glad-build\glad-generate-files.vcxproj]
+  glfw.vcxproj -> C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-build\src\Release\glfw3.lib

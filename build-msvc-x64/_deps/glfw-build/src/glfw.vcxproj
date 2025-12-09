@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{F30C8636-FA4F-3FB0-BCDF-A3F9C7E25233}</ProjectGuid>
+    <ProjectGuid>{F146B689-5730-3881-A7BB-7F229F2DD366}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -59,37 +59,43 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-build\src\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-build\src\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">glfw.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">glfw3</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-build\src\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-build\src\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">glfw.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">glfw3</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-build\src\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-build\src\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">glfw.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">glfw3</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-build\src\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-build\src\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">glfw.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">glfw3</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\include;D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src;D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\include;C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src;C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>
       </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_GLFW_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
@@ -98,10 +104,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_GLFW_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\include;D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src;D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\include;C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src;C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\include;D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src;D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\include;C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src;C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -114,17 +120,23 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\include;D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src;D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\include;C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src;C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
       <ExceptionHandling>
       </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_GLFW_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
@@ -135,10 +147,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_GLFW_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\include;D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src;D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\include;C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src;C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\include;D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src;D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\include;C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src;C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -151,17 +163,23 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\include;D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src;D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\include;C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src;C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
       <ExceptionHandling>
       </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>MinSpace</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_GLFW_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
@@ -172,10 +190,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_GLFW_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\include;D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src;D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\include;C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src;C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\include;D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src;D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\include;C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src;C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -188,18 +206,24 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\include;D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src;D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\include;C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src;C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>
       </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_GLFW_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
@@ -208,10 +232,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_GLFW_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\include;D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src;D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\include;C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src;C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\include;D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src;D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\include;C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src;C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -223,11 +247,11 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\CMakeLists.txt">
+    <CustomBuild Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-src/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glfw-src/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/EVIROMENT/Oxide/OxideEngine -BD:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64 --check-stamp-file D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-build/src/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/EVIROMENT/M/Oxides/OxideEngine -BC:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64 --check-stamp-file C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glfw-build/src/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -235,12 +259,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\CMake\glfw3.pc.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-build\src\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\CMake\glfw3.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-build\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-src/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glfw-src/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/EVIROMENT/Oxide/OxideEngine -BD:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64 --check-stamp-file D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-build/src/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/EVIROMENT/M/Oxides/OxideEngine -BC:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64 --check-stamp-file C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glfw-build/src/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -248,12 +272,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\CMake\glfw3.pc.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-build\src\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\CMake\glfw3.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-build\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-src/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glfw-src/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/EVIROMENT/Oxide/OxideEngine -BD:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64 --check-stamp-file D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-build/src/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/EVIROMENT/M/Oxides/OxideEngine -BC:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64 --check-stamp-file C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glfw-build/src/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -261,12 +285,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\CMake\glfw3.pc.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-build\src\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\CMake\glfw3.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-build\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-src/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glfw-src/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/EVIROMENT/Oxide/OxideEngine -BD:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64 --check-stamp-file D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-build/src/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/EVIROMENT/M/Oxides/OxideEngine -BC:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64 --check-stamp-file C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glfw-build/src/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -274,49 +298,49 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\CMake\glfw3.pc.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-build\src\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\CMake\glfw3.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-build\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\include\GLFW\glfw3.h" />
-    <ClInclude Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\include\GLFW\glfw3native.h" />
-    <ClInclude Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\internal.h" />
-    <ClInclude Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\platform.h" />
-    <ClInclude Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\mappings.h" />
-    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\context.c" />
-    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\init.c" />
-    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\input.c" />
-    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\monitor.c" />
-    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\platform.c" />
-    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\vulkan.c" />
-    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\window.c" />
-    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\egl_context.c" />
-    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\osmesa_context.c" />
-    <ClInclude Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\null_platform.h" />
-    <ClInclude Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\null_joystick.h" />
-    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\null_init.c" />
-    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\null_monitor.c" />
-    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\null_window.c" />
-    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\null_joystick.c" />
-    <ClInclude Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\win32_time.h" />
-    <ClInclude Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\win32_thread.h" />
-    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\win32_module.c" />
-    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\win32_time.c" />
-    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\win32_thread.c" />
-    <ClInclude Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\win32_platform.h" />
-    <ClInclude Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\win32_joystick.h" />
-    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\win32_init.c" />
-    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\win32_joystick.c" />
-    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\win32_monitor.c" />
-    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\win32_window.c" />
-    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\wgl_context.c" />
+    <ClInclude Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\include\GLFW\glfw3.h" />
+    <ClInclude Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\include\GLFW\glfw3native.h" />
+    <ClInclude Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\internal.h" />
+    <ClInclude Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\platform.h" />
+    <ClInclude Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\mappings.h" />
+    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\context.c" />
+    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\init.c" />
+    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\input.c" />
+    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\monitor.c" />
+    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\platform.c" />
+    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\vulkan.c" />
+    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\window.c" />
+    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\egl_context.c" />
+    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\osmesa_context.c" />
+    <ClInclude Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\null_platform.h" />
+    <ClInclude Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\null_joystick.h" />
+    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\null_init.c" />
+    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\null_monitor.c" />
+    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\null_window.c" />
+    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\null_joystick.c" />
+    <ClInclude Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\win32_time.h" />
+    <ClInclude Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\win32_thread.h" />
+    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\win32_module.c" />
+    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\win32_time.c" />
+    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\win32_thread.c" />
+    <ClInclude Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\win32_platform.h" />
+    <ClInclude Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\win32_joystick.h" />
+    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\win32_init.c" />
+    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\win32_joystick.c" />
+    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\win32_monitor.c" />
+    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\win32_window.c" />
+    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\wgl_context.c" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\ZERO_CHECK.vcxproj">
-      <Project>{2B08350E-22D9-31C8-992B-3D7288DFA1D0}</Project>
+    <ProjectReference Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\ZERO_CHECK.vcxproj">
+      <Project>{E9E31323-3866-3FE1-B2F3-BBB8A64839AE}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

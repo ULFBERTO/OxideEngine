@@ -1,0 +1,32 @@
+^C:\EVIROMENT\M\OXIDES\OXIDEENGINE\BUILD-MSVC-X64\CMAKEFILES\C0409204010348FD4D292942730874DE\GLAD.H.RULE
+setlocal
+cd C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glad-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\YA10F\AppData\Local\Python\pythoncore-3.14-64\python.exe -m glad --profile=compatibility --out-path=C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glad-build --api= --generator=c --extensions= --spec=gl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\EVIROMENT\M\OXIDES\OXIDEENGINE\BUILD-MSVC-X64\CMAKEFILES\6AC3DD636794CEF18BDB1D6B074377E3\GLAD-GENERATE-FILES.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\EVIROMENT\M\OXIDES\OXIDEENGINE\BUILD-MSVC-X64\_DEPS\GLAD-SRC\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/EVIROMENT/M/Oxides/OxideEngine -BC:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64 --check-stamp-file C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glad-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
