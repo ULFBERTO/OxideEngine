@@ -88,7 +88,7 @@ if(NOT imgui_POPULATED)
 endif()
 # --------------------------------
 
-add_executable(${PROJECT_NAME} src/main.cpp src/camera/camera.cpp src/utils/math_utils.cpp src/shaders/shader.cpp src/project/project_manager.cpp)
+add_executable(${PROJECT_NAME} WIN32 src/main.cpp src/core/application.cpp src/scene/scene.cpp src/editor/editor_layer.cpp src/camera/camera.cpp src/utils/math_utils.cpp src/shaders/shader.cpp src/project/project_manager.cpp)
 
 # --- Link libraries and include paths ---
 # Linking to the 'glad' and 'glfw' targets automatically handles their sources and include directories.

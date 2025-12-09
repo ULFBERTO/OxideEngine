@@ -1,4 +1,7 @@
 C:\EVIROMENT\M\Oxides\OxideEngine\src\main.cpp;C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\MarioEngine.dir\Release\main.obj
+C:\EVIROMENT\M\Oxides\OxideEngine\src\core\application.cpp;C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\MarioEngine.dir\Release\application.obj
+C:\EVIROMENT\M\Oxides\OxideEngine\src\scene\scene.cpp;C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\MarioEngine.dir\Release\scene.obj
+C:\EVIROMENT\M\Oxides\OxideEngine\src\editor\editor_layer.cpp;C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\MarioEngine.dir\Release\editor_layer.obj
 C:\EVIROMENT\M\Oxides\OxideEngine\src\camera\camera.cpp;C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\MarioEngine.dir\Release\camera.obj
 C:\EVIROMENT\M\Oxides\OxideEngine\src\utils\math_utils.cpp;C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\MarioEngine.dir\Release\math_utils.obj
 C:\EVIROMENT\M\Oxides\OxideEngine\src\shaders\shader.cpp;C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\MarioEngine.dir\Release\shader.obj

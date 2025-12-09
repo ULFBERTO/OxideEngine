@@ -4,6 +4,15 @@
     <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\src\core\application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\src\scene\scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\src\editor\editor_layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\src\camera\camera.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
