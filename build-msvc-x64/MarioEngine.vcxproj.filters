@@ -1,37 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\src\main.cpp">
+    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\src\core\application.cpp">
+    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\src\core\application.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\src\scene\scene.cpp">
+    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\src\scene\scene.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\src\editor\editor_layer.cpp">
+    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\src\editor\editor_layer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\src\camera\camera.cpp">
+    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\src\camera\camera.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\src\utils\math_utils.cpp">
+    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\src\utils\math_utils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\src\shaders\shader.cpp">
+    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\src\shaders\shader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\src\project\project_manager.cpp">
+    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\src\project\project_manager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\EVIROMENT\M\Oxides\OxideEngine\CMakeLists.txt" />
+    <CustomBuild Include="D:\EVIROMENT\Oxide\OxideEngine\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{1943170B-71E7-3109-8CA4-18499B516816}</UniqueIdentifier>
+      <UniqueIdentifier>{E1F078D7-26D8-310B-BD3A-BEC1E25FC17F}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -15,8 +15,11 @@ public:
   void Init();
   void Render(const Mat4 &view, const Mat4 &proj, GLuint shaderProgram);
   // transformMode: 0=Translate, 1=Rotate, 2=Scale
+  // hoveredAxis: -1=none, 0=X, 1=Y, 2=Z (for highlight)
+  // localSpace: if true, gizmo axes follow object rotation
   void RenderGizmos(const Mat4 &view, const Mat4 &proj, GLuint shaderProgram,
-                    int selectedIndex, int transformMode);
+                    int selectedIndex, int transformMode, int hoveredAxis = -1,
+                    bool localSpace = false);
 
   std::vector<CubeInst> &GetCubes() { return m_Cubes; }
   const std::vector<CubeInst> &GetCubes() const { return m_Cubes; }

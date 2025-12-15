@@ -1,6 +1,6 @@
-^C:\EVIROMENT\M\OXIDES\OXIDEENGINE\CMAKELISTS.TXT
+^D:\EVIROMENT\OXIDE\OXIDEENGINE\CMAKELISTS.TXT
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/EVIROMENT/M/Oxides/OxideEngine -BC:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64 --check-stamp-file C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/EVIROMENT/Oxide/OxideEngine -BD:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64 --check-stamp-file D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

@@ -481,56 +481,217 @@ void EditorLayer::DrawAboutDialog() {
 }
 
 
-void EditorLayer::HandleGizmoInput(Scene &scene, GLFWwindow *window, const float *camPos, const float *camFront) {
+int EditorLayer::DetectHoveredGizmoAxis(const float objPos[3], const Mat4& view, const Mat4& proj, float mouseX, float mouseY) {
+  // Use 2D screen-space detection - much more intuitive and precise
+  int closestAxis = -1;
+  float closestDist = 15.0f; // Pixel threshold
+  
+  Vec3 gizmoPos(objPos[0], objPos[1], objPos[2]);
+  
+  // Project gizmo center to screen
+  float centerX, centerY;
+  if (!world_to_screen(objPos, view, proj, m_SceneViewportWidth, m_SceneViewportHeight, centerX, centerY))
+    return -1;
+  
+  if (m_TransformMode == 1) {
+    // ROTATION MODE - detect circles in screen space
+    // Sample points on each circle and find minimum distance to mouse
+    const int numSamples = 48;
+    
+    // Circle basis vectors for each axis (must match rendering in scene.cpp)
+    // Index 0 = X axis (red), Index 1 = Y axis (green), Index 2 = Z axis (blue)
+    Vec3 uVecs[3] = { Vec3(1,0,0), Vec3(0,0,1), Vec3(1,0,0) };
+    Vec3 vVecs[3] = { Vec3(0,0,1), Vec3(0,1,0), Vec3(0,1,0) };
+    
+    for (int axis = 0; axis < 3; ++axis) {
+      float minDistForAxis = 1e10f;
+      
+      for (int i = 0; i < numSamples; ++i) {
+        float angle = 2.0f * 3.14159265f * float(i) / float(numSamples);
+        float cosA = cosf(angle);
+        float sinA = sinf(angle);
+        
+        // Point on circle in world space
+        Vec3 circlePoint = gizmoPos + uVecs[axis] * (m_GizmoSize * cosA) + vVecs[axis] * (m_GizmoSize * sinA);
+        float worldPos[3] = { circlePoint.x, circlePoint.y, circlePoint.z };
+        
+        // Project to screen
+        float screenX, screenY;
+        if (world_to_screen(worldPos, view, proj, m_SceneViewportWidth, m_SceneViewportHeight, screenX, screenY)) {
+          float dx = screenX - mouseX;
+          float dy = screenY - mouseY;
+          float dist = sqrtf(dx*dx + dy*dy);
+          if (dist < minDistForAxis) {
+            minDistForAxis = dist;
+          }
+        }
+      }
+      
+      if (minDistForAxis < closestDist) {
+        closestDist = minDistForAxis;
+        closestAxis = axis;
+      }
+    }
+  } else {
+    // TRANSLATE/SCALE MODE - detect lines in screen space
+    Vec3 axisEnds[3] = {
+      gizmoPos + Vec3(m_GizmoSize, 0, 0),
+      gizmoPos + Vec3(0, m_GizmoSize, 0),
+      gizmoPos + Vec3(0, 0, m_GizmoSize)
+    };
+    
+    for (int axis = 0; axis < 3; ++axis) {
+      float endPos[3] = { axisEnds[axis].x, axisEnds[axis].y, axisEnds[axis].z };
+      float endX, endY;
+      
+      if (world_to_screen(endPos, view, proj, m_SceneViewportWidth, m_SceneViewportHeight, endX, endY)) {
+        // Distance from point to line segment in 2D
+        float lineX = endX - centerX;
+        float lineY = endY - centerY;
+        float lineLen = sqrtf(lineX*lineX + lineY*lineY);
+        
+        if (lineLen > 0.001f) {
+          float toMouseX = mouseX - centerX;
+          float toMouseY = mouseY - centerY;
+          
+          // Project mouse onto line
+          float t = (toMouseX * lineX + toMouseY * lineY) / (lineLen * lineLen);
+          t = fmaxf(0.0f, fminf(1.0f, t));
+          
+          float closestX = centerX + lineX * t;
+          float closestY = centerY + lineY * t;
+          
+          float dx = mouseX - closestX;
+          float dy = mouseY - closestY;
+          float dist = sqrtf(dx*dx + dy*dy);
+          
+          if (dist < closestDist) {
+            closestDist = dist;
+            closestAxis = axis;
+          }
+        }
+      }
+    }
+  }
+  
+  return closestAxis;
+}
+
+void EditorLayer::ApplyGizmoDrag(CubeInst& cube, float deltaX, float deltaY, const Mat4& view) {
+  // Get camera right and up vectors from view matrix
+  float camRight[3] = { view.m[0], view.m[4], view.m[8] };
+  float camUp[3] = { view.m[1], view.m[5], view.m[9] };
+  
+  // Get axis direction based on local/global space
+  float axisDir[3] = {0, 0, 0};
+  
+  if (m_LocalSpace && m_TransformMode == 0) {
+    // Local space: transform axis by object rotation
+    float radX = cube.rotation[0] * 3.1415926f / 180.0f;
+    float radY = cube.rotation[1] * 3.1415926f / 180.0f;
+    float radZ = cube.rotation[2] * 3.1415926f / 180.0f;
+    
+    // Build rotation matrix
+    float cx = cosf(radX), sx = sinf(radX);
+    float cy = cosf(radY), sy = sinf(radY);
+    float cz = cosf(radZ), sz = sinf(radZ);
+    
+    // Combined rotation matrix (ZYX order)
+    float rotMat[3][3] = {
+      {cy*cz, -cy*sz, sy},
+      {sx*sy*cz + cx*sz, -sx*sy*sz + cx*cz, -sx*cy},
+      {-cx*sy*cz + sx*sz, cx*sy*sz + sx*cz, cx*cy}
+    };
+    
+    // Get local axis
+    axisDir[0] = rotMat[0][m_DragAxis];
+    axisDir[1] = rotMat[1][m_DragAxis];
+    axisDir[2] = rotMat[2][m_DragAxis];
+  } else {
+    // Global space: use world axes
+    axisDir[m_DragAxis] = 1.0f;
+  }
+  
+  // Calculate how much the axis aligns with screen directions
+  float axisScreenX = vec3_dot(axisDir, camRight);
+  float axisScreenY = vec3_dot(axisDir, camUp);
+  
+  // Combine screen deltas based on axis alignment
+  float delta = deltaX * axisScreenX + deltaY * axisScreenY;
+  
+  // Sensitivity factors
+  float translateSens = 0.01f;
+  float rotateSens = 0.5f;
+  float scaleSens = 0.005f;
+  
+  if (m_TransformMode == 0) { // Translate
+    if (m_LocalSpace) {
+      // Move along local axis
+      cube.pos[0] = m_DragStartValue[0] + axisDir[0] * delta * translateSens;
+      cube.pos[1] = m_DragStartValue[1] + axisDir[1] * delta * translateSens;
+      cube.pos[2] = m_DragStartValue[2] + axisDir[2] * delta * translateSens;
+    } else {
+      // Move along world axis
+      cube.pos[m_DragAxis] = m_DragStartValue[m_DragAxis] + delta * translateSens;
+    }
+  } else if (m_TransformMode == 1) { // Rotate
+    // Map detected axis to actual rotation axis (fix red/green swap)
+    int rotAxis = m_DragAxis;
+    if (m_DragAxis == 0) rotAxis = 1;      // Red circle -> Y rotation
+    else if (m_DragAxis == 1) rotAxis = 0; // Green circle -> X rotation
+    cube.rotation[rotAxis] = m_DragStartValue[rotAxis] + delta * rotateSens;
+  } else { // Scale
+    float newScale = m_DragStartValue[m_DragAxis] + delta * scaleSens;
+    if (newScale > 0.01f) {
+      cube.scale[m_DragAxis] = newScale;
+    }
+  }
+}
+
+void EditorLayer::HandleGizmoInput(Scene &scene, GLFWwindow *window, const Mat4& view, const Mat4& proj) {
+  // Reset hovered axis at start of frame
+  m_HoveredAxis = -1;
+  
   if (m_SelectedCubeIndex < 0 || m_SelectedCubeIndex >= (int)scene.GetCubes().size())
     return;
   
-  if (ImGui::GetIO().WantCaptureMouse)
+  // Keyboard shortcuts disabled - use toolbar buttons instead
+  
+  // Get mouse position
+  double xpos, ypos;
+  glfwGetCursorPos(window, &xpos, &ypos);
+  
+  // Calculate viewport-relative mouse position directly
+  float viewportMouseX = (float)xpos - m_SceneViewportPosX;
+  float viewportMouseY = (float)ypos - m_SceneViewportPosY;
+  
+  // Check if mouse is within viewport bounds
+  bool mouseInViewport = (viewportMouseX >= 0 && viewportMouseY >= 0 && 
+                          viewportMouseX <= m_SceneViewportWidth && 
+                          viewportMouseY <= m_SceneViewportHeight);
+  
+  if (!mouseInViewport)
     return;
     
   CubeInst &cube = scene.GetCubes()[m_SelectedCubeIndex];
   
-  double xpos, ypos;
-  glfwGetCursorPos(window, &xpos, &ypos);
-  
   bool leftPressed = glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS;
   
-  // Check for keyboard shortcuts to change transform mode
-  if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) m_TransformMode = 0;
-  if (glfwGetKey(window, GLFW_KEY_E) == GLFW_PRESS) m_TransformMode = 1;
-  if (glfwGetKey(window, GLFW_KEY_R) == GLFW_PRESS) m_TransformMode = 2;
+  // Detect which axis the mouse is hovering over
+  int hoveredAxis = DetectHoveredGizmoAxis(cube.pos, view, proj, viewportMouseX, viewportMouseY);
   
-  if (leftPressed && !m_IsDraggingGizmo) {
-    // Start dragging - detect which axis based on screen position relative to object
-    int width, height;
-    glfwGetWindowSize(window, &width, &height);
-    
-    // Simple axis detection based on mouse position
-    // In a real implementation, you'd do proper ray-gizmo intersection
-    float objScreenX = (float)width / 2.0f;  // Simplified
-    float objScreenY = (float)height / 2.0f;
-    
-    float dx = (float)xpos - objScreenX;
-    float dy = (float)ypos - objScreenY;
-    
-    // Determine axis based on drag direction
-    if (std::abs(dx) > std::abs(dy)) {
-      m_DragAxis = 0; // X axis (horizontal drag)
-    } else {
-      m_DragAxis = 1; // Y axis (vertical drag)
-    }
-    
-    // Check if Z key is held for Z axis
-    if (glfwGetKey(window, GLFW_KEY_Z) == GLFW_PRESS) {
-      m_DragAxis = 2;
-    }
-    if (glfwGetKey(window, GLFW_KEY_X) == GLFW_PRESS) {
-      m_DragAxis = 0;
-    }
-    if (glfwGetKey(window, GLFW_KEY_Y) == GLFW_PRESS) {
-      m_DragAxis = 1;
-    }
-    
+  // Update hovered axis for visual feedback (only when not dragging)
+  if (!m_IsDraggingGizmo) {
+    m_HoveredAxis = hoveredAxis;
+  }
+  
+  // Track mouse button state for edge detection
+  static bool wasLeftPressed = false;
+  bool leftJustPressed = leftPressed && !wasLeftPressed;
+  
+  // Start dragging only if clicking on a gizmo axis
+  if (leftJustPressed && !m_IsDraggingGizmo && hoveredAxis >= 0) {
+    m_DragAxis = hoveredAxis;
     m_IsDraggingGizmo = true;
     m_DragStartPos[0] = (float)xpos;
     m_DragStartPos[1] = (float)ypos;
@@ -550,28 +711,20 @@ void EditorLayer::HandleGizmoInput(Scene &scene, GLFWwindow *window, const float
     }
   }
   
-  if (m_IsDraggingGizmo && leftPressed) {
-    float deltaX = ((float)xpos - m_DragStartPos[0]) * 0.01f;
-    float deltaY = -((float)ypos - m_DragStartPos[1]) * 0.01f; // Invert Y
-    
-    float delta = (m_DragAxis == 1) ? deltaY : deltaX;
-    
-    if (m_TransformMode == 0) { // Translate
-      cube.pos[m_DragAxis] = m_DragStartValue[m_DragAxis] + delta * 5.0f;
-    } else if (m_TransformMode == 1) { // Rotate
-      cube.rotation[m_DragAxis] = m_DragStartValue[m_DragAxis] + delta * 100.0f;
-    } else { // Scale
-      float newScale = m_DragStartValue[m_DragAxis] + delta * 2.0f;
-      if (newScale > 0.01f) {
-        cube.scale[m_DragAxis] = newScale;
-      }
-    }
+  // Continue dragging
+  if (m_IsDraggingGizmo && leftPressed && m_DragAxis >= 0) {
+    float deltaX = (float)xpos - m_DragStartPos[0];
+    float deltaY = (float)ypos - m_DragStartPos[1];
+    ApplyGizmoDrag(cube, deltaX, -deltaY, view); // Invert Y
   }
   
+  // Stop dragging
   if (!leftPressed && m_IsDraggingGizmo) {
     m_IsDraggingGizmo = false;
     m_DragAxis = -1;
   }
+  
+  wasLeftPressed = leftPressed;
 }
 
 bool EditorLayer::GetMousePosInViewport(float &x, float &y) const {

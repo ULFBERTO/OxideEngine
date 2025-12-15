@@ -1,11 +1,11 @@
 {
 	"InstallScripts" : 
 	[
-		"C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/cmake_install.cmake",
-		"C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glfw-build/cmake_install.cmake",
-		"C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glfw-build/src/cmake_install.cmake",
-		"C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glfw-build/docs/cmake_install.cmake",
-		"C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glad-build/cmake_install.cmake"
+		"D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/cmake_install.cmake",
+		"D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-build/cmake_install.cmake",
+		"D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-build/src/cmake_install.cmake",
+		"D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-build/docs/cmake_install.cmake",
+		"D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glad-build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\CMakeFiles\89cf8b334a05bfbe476e60adfb37454a\update_mappings.rule">
+    <CustomBuild Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\CMakeFiles\19db85412c78c3b5becdfedc26116008\update_mappings.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\CMakeLists.txt" />
+    <CustomBuild Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\mappings.h.in">
+    <None Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\mappings.h.in">
       <Filter>Header Files</Filter>
     </None>
-    <None Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\CMake\GenerateMappings.cmake" />
-    <None Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-build\src\CMakeFiles\update_mappings" />
+    <None Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\CMake\GenerateMappings.cmake" />
+    <None Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-build\src\CMakeFiles\update_mappings" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{579BCC50-49D0-3E56-9154-9600445C32A1}</UniqueIdentifier>
+      <UniqueIdentifier>{2FC0F68B-64BE-3284-B5B3-797957197F19}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{E920835A-09A9-3848-A74C-D5F4A0EFA677}</UniqueIdentifier>
+      <UniqueIdentifier>{06F8AE9A-4092-34CA-98EE-FC2AAAC82FC8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

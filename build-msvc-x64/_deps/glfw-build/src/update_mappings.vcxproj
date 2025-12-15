@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{7458592D-742D-3023-AF41-4C060F04A7E4}</ProjectGuid>
+    <ProjectGuid>{DB796772-0E76-32FB-A724-B1A6DBDCA3FE}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -105,15 +105,15 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\CMakeFiles\89cf8b334a05bfbe476e60adfb37454a\update_mappings.rule">
+    <CustomBuild Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\CMakeFiles\19db85412c78c3b5becdfedc26116008\update_mappings.rule">
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Updating gamepad mappings from upstream repository</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cd C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src
+cd D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src
 if %errorlevel% neq 0 goto :cmEnd
-C:
+D:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -P C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glfw-src/CMake/GenerateMappings.cmake mappings.h.in mappings.h
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-src/CMake/GenerateMappings.cmake mappings.h.in mappings.h
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -122,17 +122,17 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-build\src\CMakeFiles\update_mappings</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-build\src\CMakeFiles\update_mappings</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</BuildInParallel>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Updating gamepad mappings from upstream repository</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-cd C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src
+cd D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src
 if %errorlevel% neq 0 goto :cmEnd
-C:
+D:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -P C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glfw-src/CMake/GenerateMappings.cmake mappings.h.in mappings.h
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-src/CMake/GenerateMappings.cmake mappings.h.in mappings.h
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -141,17 +141,17 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-build\src\CMakeFiles\update_mappings</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-build\src\CMakeFiles\update_mappings</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</BuildInParallel>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Updating gamepad mappings from upstream repository</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-cd C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src
+cd D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src
 if %errorlevel% neq 0 goto :cmEnd
-C:
+D:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -P C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glfw-src/CMake/GenerateMappings.cmake mappings.h.in mappings.h
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-src/CMake/GenerateMappings.cmake mappings.h.in mappings.h
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -160,17 +160,17 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-build\src\CMakeFiles\update_mappings</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-build\src\CMakeFiles\update_mappings</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</BuildInParallel>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Updating gamepad mappings from upstream repository</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-cd C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src
+cd D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src
 if %errorlevel% neq 0 goto :cmEnd
-C:
+D:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -P C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glfw-src/CMake/GenerateMappings.cmake mappings.h.in mappings.h
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-src/CMake/GenerateMappings.cmake mappings.h.in mappings.h
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -179,17 +179,17 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-build\src\CMakeFiles\update_mappings</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-build\src\CMakeFiles\update_mappings</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\CMakeLists.txt">
+    <CustomBuild Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glfw-src/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-src/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/EVIROMENT/M/Oxides/OxideEngine -BC:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64 --check-stamp-file C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glfw-build/src/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/EVIROMENT/Oxide/OxideEngine -BD:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64 --check-stamp-file D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-build/src/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -197,12 +197,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\CMake\glfw3.pc.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-build\src\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\CMake\glfw3.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-build\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glfw-src/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-src/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/EVIROMENT/M/Oxides/OxideEngine -BC:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64 --check-stamp-file C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glfw-build/src/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/EVIROMENT/Oxide/OxideEngine -BD:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64 --check-stamp-file D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-build/src/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -210,12 +210,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\CMake\glfw3.pc.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-build\src\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\CMake\glfw3.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-build\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glfw-src/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-src/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/EVIROMENT/M/Oxides/OxideEngine -BC:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64 --check-stamp-file C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glfw-build/src/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/EVIROMENT/Oxide/OxideEngine -BD:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64 --check-stamp-file D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-build/src/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -223,12 +223,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\CMake\glfw3.pc.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-build\src\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\CMake\glfw3.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-build\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glfw-src/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-src/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/EVIROMENT/M/Oxides/OxideEngine -BC:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64 --check-stamp-file C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glfw-build/src/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/EVIROMENT/Oxide/OxideEngine -BD:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64 --check-stamp-file D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-build/src/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -236,23 +236,23 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\CMake\glfw3.pc.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-build\src\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\CMake\glfw3.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-build\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <None Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\src\mappings.h.in">
+    <None Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\src\mappings.h.in">
     </None>
-    <None Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-src\CMake\GenerateMappings.cmake">
+    <None Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-src\CMake\GenerateMappings.cmake">
     </None>
-    <None Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glfw-build\src\CMakeFiles\update_mappings">
+    <None Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glfw-build\src\CMakeFiles\update_mappings">
     </None>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\ZERO_CHECK.vcxproj">
-      <Project>{E9E31323-3866-3FE1-B2F3-BBB8A64839AE}</Project>
+    <ProjectReference Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\ZERO_CHECK.vcxproj">
+      <Project>{2B08350E-22D9-31C8-992B-3D7288DFA1D0}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

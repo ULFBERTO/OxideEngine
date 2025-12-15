@@ -1,27 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glad-build\src\glad.c">
+    <ClCompile Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glad-build\src\glad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glad-build\include\glad\glad.h">
+    <ClInclude Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glad-build\include\glad\glad.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\EVIROMENT\M\Oxides\OxideEngine\build-msvc-x64\_deps\glad-src\CMakeLists.txt" />
+    <CustomBuild Include="D:\EVIROMENT\Oxide\OxideEngine\build-msvc-x64\_deps\glad-src\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{579BCC50-49D0-3E56-9154-9600445C32A1}</UniqueIdentifier>
+      <UniqueIdentifier>{2FC0F68B-64BE-3284-B5B3-797957197F19}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{E920835A-09A9-3848-A74C-D5F4A0EFA677}</UniqueIdentifier>
+      <UniqueIdentifier>{06F8AE9A-4092-34CA-98EE-FC2AAAC82FC8}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{1943170B-71E7-3109-8CA4-18499B516816}</UniqueIdentifier>
+      <UniqueIdentifier>{E1F078D7-26D8-310B-BD3A-BEC1E25FC17F}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

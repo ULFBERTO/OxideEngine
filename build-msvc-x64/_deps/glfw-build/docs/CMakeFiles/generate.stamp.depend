@@ -1,5 +1,5 @@
 # CMake generation dependency list for this directory.
-C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glfw-src/docs/CMakeLists.txt
-C:/Program Files/CMake/share/cmake-4.2/Modules/FindDoxygen.cmake
-C:/Program Files/CMake/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake
-C:/Program Files/CMake/share/cmake-4.2/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/FindDoxygen.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/FindPackageMessage.cmake
+D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-src/docs/CMakeLists.txt

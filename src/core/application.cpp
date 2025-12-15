@@ -97,8 +97,18 @@ void main(){ FragColor = uColor; }
     update_camera_direction();
     update_camera_position(0.016f, m_Window); // fixed dt for now
 
+    // Get viewport size from editor for matrices
+    float vpW_gizmo, vpH_gizmo;
+    editor.GetSceneViewportSize(vpW_gizmo, vpH_gizmo);
+    if (vpW_gizmo <= 0) vpW_gizmo = 800;
+    if (vpH_gizmo <= 0) vpH_gizmo = 600;
+    
+    float aspect_gizmo = vpW_gizmo / vpH_gizmo;
+    Mat4 proj_gizmo = mat4_perspective(45.0f * 3.1415926f / 180.0f, aspect_gizmo, 0.1f, 100.0f);
+    Mat4 view_gizmo = create_view_matrix(get_camera_position(), get_camera_front(), get_camera_up());
+    
     // --- INPUT: Gizmo Interaction ---
-    editor.HandleGizmoInput(scene, m_Window, get_camera_position(), get_camera_front());
+    editor.HandleGizmoInput(scene, m_Window, view_gizmo, proj_gizmo);
 
     // --- INPUT: Selection (only if not dragging gizmo and mouse is in viewport) ---
     static bool mousePressedLastFrame = false;
@@ -108,7 +118,7 @@ void main(){ FragColor = uColor; }
     float viewportMouseX, viewportMouseY;
     bool mouseInViewport = editor.GetMousePosInViewport(viewportMouseX, viewportMouseY);
     
-    if (mousePressed && !mousePressedLastFrame && mouseInViewport && !editor.IsDraggingGizmo()) {
+    if (mousePressed && !mousePressedLastFrame && mouseInViewport && !editor.IsDraggingGizmo() && !editor.IsHoveringGizmo()) {
       // Get viewport size for raycast
       float vpW, vpH;
       editor.GetSceneViewportSize(vpW, vpH);
@@ -215,7 +225,8 @@ void main(){ FragColor = uColor; }
 
     scene.Render(view, proj, shaderProgram);
     scene.RenderGizmos(view, proj, shaderProgram, editor.GetSelectedCubeIndex(),
-                       editor.GetTransformMode());
+                       editor.GetTransformMode(), editor.GetHoveredAxis(),
+                       editor.IsLocalSpace());
     
     editor.EndSceneRender();
 

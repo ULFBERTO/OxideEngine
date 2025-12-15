@@ -1,9 +1,9 @@
 
-if (NOT EXISTS "C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glfw-build/install_manifest.txt")
-    message(FATAL_ERROR "Cannot find install manifest: \"C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glfw-build/install_manifest.txt\"")
+if (NOT EXISTS "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-build/install_manifest.txt")
+    message(FATAL_ERROR "Cannot find install manifest: \"D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-build/install_manifest.txt\"")
 endif()
 
-file(READ "C:/EVIROMENT/M/Oxides/OxideEngine/build-msvc-x64/_deps/glfw-build/install_manifest.txt" files)
+file(READ "D:/EVIROMENT/Oxide/OxideEngine/build-msvc-x64/_deps/glfw-build/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 
 foreach (file ${files})

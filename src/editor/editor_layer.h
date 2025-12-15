@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../scene/scene.h"
+#include "../utils/math_utils.h"
 #include "editor_defs.h"
 #include <GLFW/glfw3.h>
 #include <glad/glad.h>
@@ -24,10 +25,13 @@ public:
   int GetSelectedCubeIndex() const { return m_SelectedCubeIndex; }
   void SetSelectedCubeIndex(int index) { m_SelectedCubeIndex = index; }
   int GetTransformMode() const { return m_TransformMode; }
+  int GetHoveredAxis() const { return m_HoveredAxis; }
+  bool IsLocalSpace() const { return m_LocalSpace; }
   
   // Gizmo interaction
-  void HandleGizmoInput(Scene &scene, GLFWwindow *window, const float *camPos, const float *camFront);
+  void HandleGizmoInput(Scene &scene, GLFWwindow *window, const Mat4& view, const Mat4& proj);
   bool IsDraggingGizmo() const { return m_IsDraggingGizmo; }
+  bool IsHoveringGizmo() const { return m_HoveredAxis >= 0; }
   
   // Scene viewport
   void BeginSceneRender();
@@ -50,6 +54,10 @@ private:
   void DrawProperties(Scene &scene);
   void DrawFileExplorer();
   void DrawAboutDialog();
+  
+  // Gizmo helpers
+  int DetectHoveredGizmoAxis(const float objPos[3], const Mat4& view, const Mat4& proj, float mouseX, float mouseY);
+  void ApplyGizmoDrag(CubeInst& cube, float deltaX, float deltaY, const Mat4& view);
 
   GLFWwindow *m_Window = nullptr;
 
@@ -81,9 +89,11 @@ private:
   int m_SelectedCubeIndex = -1;
   int m_TransformMode = 0; // 0=Translate, 1=Rotate, 2=Scale
   
-  // Gizmo dragging state
+  // Gizmo state
   bool m_IsDraggingGizmo = false;
-  int m_DragAxis = -1; // 0=X, 1=Y, 2=Z
+  int m_DragAxis = -1;      // 0=X, 1=Y, 2=Z, -1=none
+  int m_HoveredAxis = -1;   // For visual feedback
   float m_DragStartPos[2] = {0, 0};
   float m_DragStartValue[3] = {0, 0, 0};
+  float m_GizmoSize = 1.5f; // Size of gizmo axes
 };

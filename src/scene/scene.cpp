@@ -407,14 +407,14 @@ void Scene::Render(const Mat4 &view, const Mat4 &proj, GLuint shaderProgram) {
 
 void Scene::RenderGizmos(const Mat4 &view, const Mat4 &proj,
                          GLuint shaderProgram, int selectedIndex,
-                         int transformMode) {
+                         int transformMode, int hoveredAxis,
+                         bool localSpace) {
   if (selectedIndex < 0 || selectedIndex >= (int)m_Cubes.size())
     return;
 
   const auto &c = m_Cubes[selectedIndex];
 
-  // Use our specific Gizmo shader, ignore the main scene shader passed (it's
-  // for PBR/Lit objects)
+  // Use our specific Gizmo shader
   glUseProgram(m_GizmoShader);
   glDisable(GL_DEPTH_TEST); // Gizmos visible thru walls
 
@@ -427,137 +427,222 @@ void Scene::RenderGizmos(const Mat4 &view, const Mat4 &proj,
   float px = c.pos[0];
   float py = c.pos[1];
   float pz = c.pos[2];
+  
+  // Colors: normal and highlighted (brighter)
+  float colorsNormal[3][4] = {
+    {1.0f, 0.25f, 0.25f, 1.0f},  // X - Red
+    {0.25f, 1.0f, 0.25f, 1.0f},  // Y - Green
+    {0.4f, 0.4f, 1.0f, 1.0f}     // Z - Blue
+  };
+  float colorHighlight[4] = {1.0f, 1.0f, 0.2f, 1.0f}; // Yellow highlight
 
-  if (transformMode == 0) { // TRANSLATE
-    // Draw 3 Axes using Grid Lines or similar geometry
-    // X Axis (Red)
-    Mat4 modelX = mat4_identity();
-    // Scale X to length. Translate to pos.
-    // We can use the Ring VBO (Line Strip) if we regenerate it, OR just draw
-    // lines dynamically? Better: Use VBO_Cube for thick lines. X Axis:
-    // Scale(1.0, 0.05, 0.05) -> Translate(0.5, 0, 0) -> Translate(Pos)
-    Mat4 s = mat4_identity();
-    s.m[0] = 1.0f;
-    s.m[5] = 0.05f;
-    s.m[10] = 0.05f;
-    Mat4 t_off = mat4_identity();
-    t_off.m[12] = 0.5f;
-    Mat4 t_pos = mat4_identity();
-    t_pos.m[12] = px;
-    t_pos.m[13] = py;
-    t_pos.m[14] = pz;
-    Mat4 m = mat4_mul(t_pos, mat4_mul(t_off, s));
-    Mat4 mvp = mat4_mul(vp, m);
+  // Gizmo size
+  const float gizmoLength = 1.5f;
+  const float arrowTipSize = 0.1f;
+  
+  // Build gizmo transform matrix (position + optional rotation for local space)
+  Mat4 t_pos = mat4_identity();
+  t_pos.m[12] = px;
+  t_pos.m[13] = py;
+  t_pos.m[14] = pz;
+  
+  // Build rotation matrix for local space
+  Mat4 objRot = mat4_identity();
+  if (localSpace) {
+    float radX = c.rotation[0] * 3.1415926f / 180.0f;
+    float radY = c.rotation[1] * 3.1415926f / 180.0f;
+    float radZ = c.rotation[2] * 3.1415926f / 180.0f;
+    
+    Mat4 rotX = mat4_identity();
+    rotX.m[5] = cos(radX); rotX.m[6] = -sin(radX);
+    rotX.m[9] = sin(radX); rotX.m[10] = cos(radX);
+    
+    Mat4 rotY = mat4_identity();
+    rotY.m[0] = cos(radY); rotY.m[2] = sin(radY);
+    rotY.m[8] = -sin(radY); rotY.m[10] = cos(radY);
+    
+    Mat4 rotZ = mat4_identity();
+    rotZ.m[0] = cos(radZ); rotZ.m[1] = -sin(radZ);
+    rotZ.m[4] = sin(radZ); rotZ.m[5] = cos(radZ);
+    
+    objRot = mat4_mul(mat4_mul(rotZ, rotY), rotX);
+  }
+  
+  // Combined gizmo base transform: position * rotation
+  Mat4 gizmoBase = mat4_mul(t_pos, objRot);
+
+  auto setAxisColor = [&](int axis) {
+    if (axis == hoveredAxis) {
+      glUniform4fv(locColor, 1, colorHighlight);
+    } else {
+      glUniform4fv(locColor, 1, colorsNormal[axis]);
+    }
+  };
+
+  // Create temporary VAO/VBO for lines
+  GLuint tempVAO, tempVBO;
+  glGenVertexArrays(1, &tempVAO);
+  glGenBuffers(1, &tempVBO);
+
+  if (transformMode == 0) { // TRANSLATE - Lines with arrow tips
+    glLineWidth(3.0f);
+    
+    // Draw axis lines
+    float lineVerts[] = {
+      0.0f, 0.0f, 0.0f, gizmoLength, 0.0f, 0.0f,  // X
+      0.0f, 0.0f, 0.0f, 0.0f, gizmoLength, 0.0f,  // Y
+      0.0f, 0.0f, 0.0f, 0.0f, 0.0f, gizmoLength   // Z
+    };
+    
+    glBindVertexArray(tempVAO);
+    glBindBuffer(GL_ARRAY_BUFFER, tempVBO);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(lineVerts), lineVerts, GL_DYNAMIC_DRAW);
+    glEnableVertexAttribArray(0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+    
+    Mat4 mvp = mat4_mul(vp, gizmoBase);
     glUniformMatrix4fv(locMVP, 1, GL_FALSE, mvp.m);
-    glUniform4f(locColor, 1.0f, 0.0f, 0.0f, 1.0f);
+    
+    setAxisColor(0);
+    glDrawArrays(GL_LINES, 0, 2);
+    setAxisColor(1);
+    glDrawArrays(GL_LINES, 2, 2);
+    setAxisColor(2);
+    glDrawArrays(GL_LINES, 4, 2);
+    
+    // Draw arrow tips as small cubes
     glBindVertexArray(m_VAO_Cube);
+    
+    Mat4 s_tip = mat4_identity();
+    s_tip.m[0] = arrowTipSize * 1.8f;
+    s_tip.m[5] = arrowTipSize;
+    s_tip.m[10] = arrowTipSize;
+    Mat4 t_tip = mat4_identity();
+    t_tip.m[12] = gizmoLength;
+    mvp = mat4_mul(vp, mat4_mul(gizmoBase, mat4_mul(t_tip, s_tip)));
+    glUniformMatrix4fv(locMVP, 1, GL_FALSE, mvp.m);
+    setAxisColor(0);
     glDrawArrays(GL_TRIANGLES, 0, m_CubeVertexCount);
 
-    // Y Axis (Green)
-    s = mat4_identity();
-    s.m[0] = 0.05f;
-    s.m[5] = 1.0f;
-    s.m[10] = 0.05f;
-    t_off = mat4_identity();
-    t_off.m[13] = 0.5f;
-    m = mat4_mul(t_pos, mat4_mul(t_off, s));
-    mvp = mat4_mul(vp, m);
+    s_tip = mat4_identity();
+    s_tip.m[0] = arrowTipSize;
+    s_tip.m[5] = arrowTipSize * 1.8f;
+    s_tip.m[10] = arrowTipSize;
+    t_tip = mat4_identity();
+    t_tip.m[13] = gizmoLength;
+    mvp = mat4_mul(vp, mat4_mul(gizmoBase, mat4_mul(t_tip, s_tip)));
     glUniformMatrix4fv(locMVP, 1, GL_FALSE, mvp.m);
-    glUniform4f(locColor, 0.0f, 1.0f, 0.0f, 1.0f);
+    setAxisColor(1);
     glDrawArrays(GL_TRIANGLES, 0, m_CubeVertexCount);
 
-    // Z Axis (Blue)
-    s = mat4_identity();
-    s.m[0] = 0.05f;
-    s.m[5] = 0.05f;
-    s.m[10] = 1.0f;
-    t_off = mat4_identity();
-    t_off.m[14] = 0.5f;
-    m = mat4_mul(t_pos, mat4_mul(t_off, s));
-    mvp = mat4_mul(vp, m);
+    s_tip = mat4_identity();
+    s_tip.m[0] = arrowTipSize;
+    s_tip.m[5] = arrowTipSize;
+    s_tip.m[10] = arrowTipSize * 1.8f;
+    t_tip = mat4_identity();
+    t_tip.m[14] = gizmoLength;
+    mvp = mat4_mul(vp, mat4_mul(gizmoBase, mat4_mul(t_tip, s_tip)));
     glUniformMatrix4fv(locMVP, 1, GL_FALSE, mvp.m);
-    glUniform4f(locColor, 0.0f, 0.0f, 1.0f, 1.0f);
+    setAxisColor(2);
     glDrawArrays(GL_TRIANGLES, 0, m_CubeVertexCount);
-  } else if (transformMode == 1) { // ROTATE
-    // Draw Rings
-    // X Plane (Red) -> Ring in YZ plane -> Rotate 90 deg Y?
-    // Ring is in XY plane. Rotate 90 Y -> YZ plane.
-    Mat4 t_pos = mat4_identity();
-    t_pos.m[12] = px;
-    t_pos.m[13] = py;
-    t_pos.m[14] = pz;
-    Mat4 s = mat4_identity();
-    s.m[0] = 1.5f;
-    s.m[5] = 1.5f;
-    s.m[10] = 1.5f; // Radius
-
-    // X Axis Rotation (YZ plane) -> Rotate Ring(XY) by 90 around Y.
-    Mat4 rot = mat4_identity(); // 0 0 1, 0 1 0, -1 0 0
-    rot.m[0] = 0;
-    rot.m[2] = 1;
-    rot.m[8] = -1;
-    rot.m[10] = 0;
-
-    Mat4 mvp = mat4_mul(vp, mat4_mul(t_pos, mat4_mul(rot, s)));
-    glUniformMatrix4fv(locMVP, 1, GL_FALSE, mvp.m);
-    glUniform4f(locColor, 1.0f, 0.0f, 0.0f, 1.0f);
+    
+  } else if (transformMode == 1) { // ROTATE - Rings
+    glLineWidth(2.5f);
     glBindVertexArray(m_VAO_Ring);
+    
+    Mat4 s = mat4_identity();
+    s.m[0] = gizmoLength;
+    s.m[5] = gizmoLength;
+    s.m[10] = gizmoLength;
+
+    // X Axis Rotation (YZ plane)
+    Mat4 rot = mat4_identity();
+    rot.m[5] = 0; rot.m[6] = 1;
+    rot.m[9] = -1; rot.m[10] = 0;
+    Mat4 mvp = mat4_mul(vp, mat4_mul(gizmoBase, mat4_mul(rot, s)));
+    glUniformMatrix4fv(locMVP, 1, GL_FALSE, mvp.m);
+    setAxisColor(0);
     glDrawArrays(GL_LINE_LOOP, 0, m_RingVertexCount);
 
-    // Y Axis Rotation (XZ plane) -> Rotate Ring(XY) by 90 around X.
+    // Y Axis Rotation (XZ plane)
     rot = mat4_identity();
-    rot.m[5] = 0;
-    rot.m[6] = -1;
-    rot.m[9] = 1;
-    rot.m[10] = 0;
-
-    mvp = mat4_mul(vp, mat4_mul(t_pos, mat4_mul(rot, s)));
+    rot.m[0] = 0; rot.m[2] = -1;
+    rot.m[8] = 1; rot.m[10] = 0;
+    mvp = mat4_mul(vp, mat4_mul(gizmoBase, mat4_mul(rot, s)));
     glUniformMatrix4fv(locMVP, 1, GL_FALSE, mvp.m);
-    glUniform4f(locColor, 0.0f, 1.0f, 0.0f, 1.0f);
+    setAxisColor(1);
     glDrawArrays(GL_LINE_LOOP, 0, m_RingVertexCount);
 
-    // Z Axis Rotation (XY plane) -> Default Ring
-    mvp = mat4_mul(vp, mat4_mul(t_pos, s));
+    // Z Axis Rotation (XY plane)
+    mvp = mat4_mul(vp, mat4_mul(gizmoBase, s));
     glUniformMatrix4fv(locMVP, 1, GL_FALSE, mvp.m);
-    glUniform4f(locColor, 0.0f, 0.0f, 1.0f, 1.0f);
+    setAxisColor(2);
     glDrawArrays(GL_LINE_LOOP, 0, m_RingVertexCount);
-  } else if (transformMode == 2) { // SCALE
-    // Similar to Translate but boxes at ends
-    Mat4 t_pos = mat4_identity();
-    t_pos.m[12] = px;
-    t_pos.m[13] = py;
-    t_pos.m[14] = pz;
-
-    // X
-    Mat4 t_end = mat4_identity();
-    t_end.m[12] = 1.5f;
-    Mat4 s_box = mat4_identity();
-    s_box.m[0] = 0.2f;
-    s_box.m[5] = 0.2f;
-    s_box.m[10] = 0.2f;
-    Mat4 mvp = mat4_mul(vp, mat4_mul(t_pos, mat4_mul(t_end, s_box)));
+    
+  } else if (transformMode == 2) { // SCALE - Lines with boxes (always local)
+    glLineWidth(3.0f);
+    
+    // Scale gizmo always uses local space (object rotation)
+    Mat4 scaleBase = mat4_mul(t_pos, objRot);
+    
+    float lineVerts[] = {
+      0.0f, 0.0f, 0.0f, gizmoLength - 0.1f, 0.0f, 0.0f,
+      0.0f, 0.0f, 0.0f, 0.0f, gizmoLength - 0.1f, 0.0f,
+      0.0f, 0.0f, 0.0f, 0.0f, 0.0f, gizmoLength - 0.1f
+    };
+    
+    glBindVertexArray(tempVAO);
+    glBindBuffer(GL_ARRAY_BUFFER, tempVBO);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(lineVerts), lineVerts, GL_DYNAMIC_DRAW);
+    glEnableVertexAttribArray(0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+    
+    Mat4 mvp = mat4_mul(vp, scaleBase);
     glUniformMatrix4fv(locMVP, 1, GL_FALSE, mvp.m);
-    glUniform4f(locColor, 1.0f, 0.0f, 0.0f, 1.0f);
+    
+    setAxisColor(0);
+    glDrawArrays(GL_LINES, 0, 2);
+    setAxisColor(1);
+    glDrawArrays(GL_LINES, 2, 2);
+    setAxisColor(2);
+    glDrawArrays(GL_LINES, 4, 2);
+    
+    // Draw end boxes
     glBindVertexArray(m_VAO_Cube);
+    const float boxSize = 0.1f;
+    
+    Mat4 s_box = mat4_identity();
+    s_box.m[0] = boxSize;
+    s_box.m[5] = boxSize;
+    s_box.m[10] = boxSize;
+    
+    Mat4 t_end = mat4_identity();
+    t_end.m[12] = gizmoLength;
+    mvp = mat4_mul(vp, mat4_mul(scaleBase, mat4_mul(t_end, s_box)));
+    glUniformMatrix4fv(locMVP, 1, GL_FALSE, mvp.m);
+    setAxisColor(0);
     glDrawArrays(GL_TRIANGLES, 0, m_CubeVertexCount);
 
-    // Y
     t_end = mat4_identity();
-    t_end.m[13] = 1.5f;
-    mvp = mat4_mul(vp, mat4_mul(t_pos, mat4_mul(t_end, s_box)));
+    t_end.m[13] = gizmoLength;
+    mvp = mat4_mul(vp, mat4_mul(scaleBase, mat4_mul(t_end, s_box)));
     glUniformMatrix4fv(locMVP, 1, GL_FALSE, mvp.m);
-    glUniform4f(locColor, 0.0f, 1.0f, 0.0f, 1.0f);
+    setAxisColor(1);
     glDrawArrays(GL_TRIANGLES, 0, m_CubeVertexCount);
 
-    // Z
     t_end = mat4_identity();
-    t_end.m[14] = 1.5f;
-    mvp = mat4_mul(vp, mat4_mul(t_pos, mat4_mul(t_end, s_box)));
+    t_end.m[14] = gizmoLength;
+    mvp = mat4_mul(vp, mat4_mul(scaleBase, mat4_mul(t_end, s_box)));
     glUniformMatrix4fv(locMVP, 1, GL_FALSE, mvp.m);
-    glUniform4f(locColor, 0.0f, 0.0f, 1.0f, 1.0f);
+    setAxisColor(2);
     glDrawArrays(GL_TRIANGLES, 0, m_CubeVertexCount);
   }
 
+  // Cleanup temp buffers
+  glDeleteBuffers(1, &tempVBO);
+  glDeleteVertexArrays(1, &tempVAO);
+
   glBindVertexArray(0);
+  glLineWidth(1.0f);
   glEnable(GL_DEPTH_TEST);
 }
